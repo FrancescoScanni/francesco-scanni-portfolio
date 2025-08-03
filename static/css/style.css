@@ -1,0 +1,35 @@
+/*Fonts*/
+@import url("static\css\fonts.css");
+
+
+/*Menu*/
+.menuBox{
+    margin: 6px 0px;
+    margin-right: 24px;
+}
+.bar{
+  width: 34px;
+  height: 3px;
+  background-color: #333;
+}
+.bar1,.bar2{
+    margin-bottom: 8px;
+}
+
+
+/*Coded with*/
+.pl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 60px;
+    border-radius: 6px;
+    border: 2px solid #1B1B1B;
+
+    color: #484848;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+}
+

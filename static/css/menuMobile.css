@@ -1,0 +1,12 @@
+.menuBox{
+    margin: 6px 0px;
+    margin-right: 24px;
+}
+.bar{
+  width: 34px;
+  height: 3px;
+  background-color: #333;
+}
+.bar1,.bar2{
+    margin-bottom: 8px;
+}
