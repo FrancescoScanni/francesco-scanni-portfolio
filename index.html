@@ -8,11 +8,10 @@
 </head>
 <body>
     <!--HomeButton-->
-    <div class="homeButton w-[100vw] h-[100vh] px-[15px] py-[30px] flex justify-end items-end fixed">
-        <div class="homeSphere w-[44px] h-[44px] bg-[#D9D9D9] rounded-[400px] flex justify-center items-center border border-[#1b1b1b]">
-            <img class="w-[28px] h-[28px]" src="static\media\images\Home.png" alt="home">
-        </div>
+    <div class="mt-[87vh] ml-[82vw] homeSphere w-[44px] h-[44px] bg-[#D9D9D9] rounded-[400px] flex justify-center items-center border border-[#1b1b1b] fixed z-20">
+        <img class="w-[28px] h-[28px]" src="static\media\images\Home.png" alt="home">
     </div>
+
 
 
     <!--Header-->
@@ -35,7 +34,7 @@
             <div class="aboutMe mt-[28px] py-[14px] pl-[32px] pr-[28px] inline-flex justify-center items-center gap-[14px] rounded-[4px] border border-[#62BA1B] bg-[#3F8E00] shadow-[0_8px_30px_rgba(63,142,0,0.5)]">
                 <div class="innerButton">
                     <input type="button" value="About me" class="button text-white font-ibm text-[16px] font-bold"></div>
-                    <img src="static\media\images\vector.png" class="vector mt-[4px]">
+                    <img src="static\media\images\vector.png" class="vectorMain mt-[4px]">
                 </div>
                 
         </div>
@@ -56,51 +55,188 @@
     <div class="container h-[240px]">
         <div class="explore w-[100vw] text-[#080808] text-[28px] font-extrabold pt-[35px] flex justify-center">Explore.</div>
         <div class="features mt-[22px] grid grid-cols-1">
+
+
+            <!--Projects-->
             <div class="info">
-                <div class="featSet flex">Projects <img src="static\media\images\Idea.png" class="ml-[8px] w-[28px] h-[28px]"></div>
-                <img src="static\media\images\vector1.png" class="vector1">
+                <div class="flex items-center justify-between mt-[12px]">
+                    <div class="featSet flex">Projects <img src="static\media\images\Idea.png" class="ml-[8px] w-[28px] h-[28px]"></div>
+                    <img src="static\media\images\vector1.png" id="vec1" class="vector">
+                </div>
+                
+
+                <div class="contentProj">
+                    <p class="descProj w-[256px] mt-[12px] text-[#484848] text-[10px] font-semibold leading-[14px]">These are projects I’ve built in school and in my free time. I enjoy turning ideas into code and learning tools. Each one shows a bit of my passion and growth.</p>
+                    <div class="projSet flex flex-col mt-[30px]">
+
+                        <!--Proj1-->
+                        <div class="proj">
+                            <div class="textSet flex flex-col justify-center">
+                                <div class="rounded-[60px] bg-[#FFF6E9] w-[44px] h-[16px]"><p class="text-[#FFA217] text-[6px] font-bold flex justify-center items-center">Analysis</p></div>
+                                <p class="text-[#080808] text-[15px] w-[160px] not-italic font-extrabold leading-normal">Job related AI Bias </p>
+                                <p class="text-[#484848] text-[6px] not-italic font-bold leading-[10px] tracking-[0.06px] w-[166px] ">A site that explores how image AIs can show bias. I tested prompts and noticed patterns in gender, race, and stereotypes. The site includes visuals and brief reflections.</p>
+                                <p class="text-[#FFA217] mt-[4px] text-[8px] italic font-semibold leading-[10px] tracking-[0.08px] underline">Visit site</p>
+                            </div>
+                            <div class="imgSet w-[100%] flex justify-center"><img src="static\media\images\projMobile1.png"  class="h-[100px] w-[100px]"></div>
+                        </div>
+
+                        <!--Proj2-->
+                        <div class="proj flex flex-row-reverse pr-[24px] pl-[16px]">
+                            <div class="textSet flex flex-col items-end justify-center">
+                                <div class="rounded-[60px] bg-[#D0E6FF] w-[44px] h-[16px]"><p class="text-[#000AFF] text-[6px] font-bold flex justify-center items-center">Education</p></div>
+                                <p class="text-[#080808] text-[15px] not-italic font-extrabold leading-normal">Linear Regression ML</p>
+                                <p class="text-[#484848] text-[6px] font-bold leading-[10px] tracking-[0.06px] w-[166px] text-right">I followed a project to learn linear regression with Python. I trained a model to predict a child’s height from a parent’s, using scikit-learn and basic data prep.</p>
+                                <p class="text-[#000AFF] mt-[4px] text-[8px] italic font-semibold leading-[10px] tracking-[0.08px] underline">View docs</p>
+                            </div>
+                            <div class="imgSet w-[100%] flex justify-center"><img src="static\media\images\projMobile2.png" class="h-[100px] w-[100px]"></div>
+                        </div>
+
+                        <!--Proj3-->
+                        <div class="proj">
+                            <div class="textSet flex flex-col justify-center">
+                                <div class="rounded-[60px] bg-[#E0FFF8] w-[44px] h-[16px]"><p class="text-[#2AB090] text-[6px] font-bold flex justify-center items-center">Entertainment</p></div>
+                                <p class="text-[#080808] text-[15px] font-extrabold">Whack a Mole - Game </p>
+                                <p class="text-[#484848] text-[6px] not-italic font-bold leading-[10px] tracking-[0.06px] w-[166px] ">I made a Whack-a-Mole game with HTML, CSS, and JS. It helped me learn clicks, timers, and simple game logic. It’s quick, fun, and might get updates soon!</p>
+                                <p class="text-[#2AB090] mt-[4px] text-[8px] italic font-semibold leading-[10px] tracking-[0.08px] underline">Play now</p>
+                            </div>
+                            <div class="imgSet w-[100%] flex justify-center"><img src="static\media\images\projMobile3.png" class="h-[100px] w-[100px]"></div>
+                        </div>
+
+                        <!-- ... -->
+                    </div>
+                </div>
             </div>
+
+
+
+            <!--Articles-->
             <div class="info">
-                <div class="featSet flex">Articles <img src="static\media\images\Pencil.png" class="ml-[8px] w-[28px] h-[28px]"></div>
-                <img src="static\media\images\vector1.png" class="vector1">
+                <div class="flex items-center justify-between mt-[12px]">
+                    <div class="featSet flex">Articles <img src="static\media\images\Pencil.png" class="ml-[8px] w-[28px] h-[28px]"></div>
+                    <img src="static\media\images\vector1.png" class="vector" id="vec2">
+                </div>
+                
+
+                <div class="contentArt">
+                    <p class="descArt w-[256px] mt-[12px] text-[#484848] text-[10px] font-semibold leading-[14px]">Here are some articles I’ve written on tech, AI, and digital culture. I enjoy sharing what I learn, making complex ideas simple, and reflecting on how technology shapes our lives.</p>
+                    
+                    <div class="artSet w-[auto] grid grid-cols-2 mt-[30px] gap-[30px] relative pb-[6px]">
+
+                        <div class="article">
+                            <div class="artBox">
+                                <img src="static\media\images\artMobile1.png" class="w-[100%] h-[144px] rounded-t-[10px]">
+                                <div class="pt-[8px] pb-[4px] px-[12px]">
+                                    <p class="artTitle text-[#080808] text-[10px] font-extrabold leading-[12px]">Bridging Generations and Tech...how?</p>
+                                    <p class="sign text-[#080808] text-[6px] font-semibold leading-[10px] mt-[2px]">Francesco Scanni - ?/25</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="article">
+                            <div class="artBox">
+                                <img src="static\media\images\artMobile2.png" class="w-[100%] h-[144px] rounded-t-[10px]">
+                                <div class="pt-[8px] pb-[4px] px-[12px]">
+                                    <p class="artTitle text-[#080808] text-[10px] font-extrabold leading-[12px]">The Core of innovation: Tech Ecosystems</p>
+                                    <p class="sign text-[#080808] text-[6px] font-semibold leading-[10px] mt-[2px]">Francesco Scanni - ?/25</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="article lastArt">
+                            <div class="artBox">
+                                <img src="static\media\images\artMobile1.png" class="w-[100%] h-[144px] rounded-t-[10px]">
+                                <div class="pt-[8px] pb-[4px] px-[12px]">
+                                    <p class="artTitle text-[#080808] text-[10px] font-extrabold leading-[12px]">Bridging Generations and Tech...how?</p>
+                                    <p class="sign text-[#080808] text-[6px] font-semibold leading-[10px] mt-[2px]">Francesco Scanni - ?/25</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="article lastArt">
+                            <div class="artBox">
+                                <img src="static\media\images\artMobile2.png" class="w-[100%] h-[144px] rounded-t-[10px]">
+                                <div class="pt-[8px] pb-[4px] px-[12px]">
+                                    <p class="artTitle text-[#080808] text-[10px] font-extrabold leading-[12px]">The Core of innovation: Tech Ecosystems</p>
+                                    <p class="sign text-[#080808] text-[6px] font-semibold leading-[10px] mt-[2px]">Francesco Scanni - ?/25</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="overlay absolute p-0 -inset-x-[20px] bottom-[6px] h-[60%] bg-gradient-to-t from-white via-white/90 to-transparent flex flex-col justify-end items-center">
+                            <button class="seeMore h-[32px] w-[80px] rounded-[14px] bg-white shadow-[0_2px_4px_2px_rgba(0,0,0,0.25)] mb-[55px] flex justify-center items-center text-[#080808] text-[8px] font-semibold leading-[10px]">See more <img src="static\media\images\vector2.png" class="h-[6px] w-[4px] ml-[7px] my-[13px]"></button>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="hide w-[100%] flex justify-center">
+                        <button class="hideContent mb-[20px] h-[32px] w-[80px] rounded-[14px] bg-white shadow-[0_2px_4px_2px_rgba(0,0,0,0.25)] flex justify-center items-center text-[#080808] text-[8px] font-semibold leading-[10px]">Hide content <img src="static\media\images\vector2.png" class="h-[6px] w-[4px] ml-[7px] my-[13px] rotate-180"></button>
+                    </div>
+                    
+            
+                </div>
+
             </div>
-            <div class="info">
-                <div class="featSet flex">Feedback <img src="static\media\images\Contacts.png" class="ml-[8px] w-[28px] h-[28px]"></div>
-                <img src="static\media\images\vector1.png" class="vector1">
+
+
+
+
+            <!--Feedback-->
+            <div class="info index-1">
+                <div class="flex items-center justify-between mt-[12px]">
+                    <div class="featSet flex">Feedback <img src="static\media\images\Contacts.png" class="ml-[8px] w-[28px] h-[28px]"></div>
+                    <img src="static\media\images\vector1.png" class="vector" id="vec3">
+                </div>
+
+                <div class="contentFeed w-[100%] flex justify-center items-center">
+                    <p class="w-[256px] my-[16px] text-[#484848] text-[10px] font-semibold leading-[14px] text-center">This section is empty for now</p>
+                </div>
+            </div>
+
+
+
+
+            <!--Hero2.1/Contacts-->
+            <div class="container pt-[52px] h-[530px] bg-[#080808] flex flex-col items-center z-0">
+                <div class="contMe text-white text-[28px] font-extrabold">Contact me</div>
+                <form class="inputSet mt-[24px] w-[200px] flex flex-col items-center">
+                    <div class="inputItem">
+                        <p>Email</p>
+                        <input class="h-[32px] px-[12px] mt-[5px] rounded-[4px] bg-[#F8F8F8] border border-[#D8D8D8] text-[#757575] text-[12px] leading-[21px]" type="email" value="Please enter your email">
+                    </div>
+                    <div class="inputItem mt-[18px]">
+                        <p>Mobile</p>
+                        <input class="h-[32px] px-[12px] mt-[5px] rounded-[4px] bg-[#F8F8F8] border border-[#D8D8D8] text-[#757575] text-[12px] leading-[21px]" type="tel" value="Enter mobile">
+                    </div>
+                    <div class="inputItem mt-[18px]">
+                        <p>Message</p>
+                        <input class="px-[12px] mt-[5px] rounded-[4px] bg-[#F8F8F8] border border-[#D8D8D8] h-[92px] text-[#757575] text-[12px] leading-[21px]" type="text" value="Enter your message">
+                    </div>
+
+                    <input class="flex w-[136px] h-[36px] mt-[24px] justify-center items-center rounded-[4px] border border-[#62BA1B] bg-[#3F8E00] shadow-[0_8px_30px_rgba(63,142,0,0.5)] text-white text-[14px] font-extrabold" type="submit" value="Submit">
+                </form>
+            </div>
+
+
+
+
+            <!--Footer/Rights-->
+            <div class="container w-[100vw] h-[58px] bg-[#1B1B1B]">
+                <p class="pt-[28px] text-[#9C9C9C] text-center text-[8px] font-normal leading-[12px] tracking-[0.08px]">Francesco Scanni<br> Last update 08/2025</p>
             </div>
         </div>
     </div>
 
 
-    <!--Hero3/Contacts-->
-    <div class="container pt-[52px] h-[530px] bg-[#080808] flex flex-col items-center">
-        <div class="contMe text-white text-[28px] font-extrabold">Contact me</div>
-        <form class="inputSet mt-[24px] w-[200px] flex flex-col items-center">
-            <div class="inputItem">
-                <p>Email</p>
-                <input class="h-[32px] px-[12px] mt-[5px] rounded-[4px] bg-[#F8F8F8] border border-[#D8D8D8] text-[#757575] text-[12px] leading-[21px]" type="email" value="Please enter your email">
-            </div>
-            <div class="inputItem mt-[18px]">
-                <p>Mobile</p>
-                <input class="h-[32px] px-[12px] mt-[5px] rounded-[4px] bg-[#F8F8F8] border border-[#D8D8D8] text-[#757575] text-[12px] leading-[21px]" type="tel" value="Enter mobile">
-            </div>
-            <div class="inputItem mt-[18px]">
-                <p>Message</p>
-                <input class="px-[12px] mt-[5px] rounded-[4px] bg-[#F8F8F8] border border-[#D8D8D8] h-[92px] text-[#757575] text-[12px] leading-[21px]" type="text" value="Enter your message">
-            </div>
 
-            <input class="flex w-[136px] h-[36px] mt-[24px] justify-center items-center rounded-[4px] border border-[#62BA1B] bg-[#3F8E00] shadow-[0_8px_30px_rgba(63,142,0,0.5)] text-white text-[14px] font-extrabold" type="submit" value="Submit">
-        </form>
+    
 
 
-
-    </div>
-
-
-    <!--Footer/Rights-->
-    <div class="container w-[100vw] h-[58px] bg-[#1B1B1B]">
-        <p class="pt-[28px] text-[#9C9C9C] text-center text-[8px] font-normal leading-[12px] tracking-[0.08px]">Francesco Scanni<br> Last update 08/2025</p>
-    </div>
+    
 
 
 
@@ -108,7 +244,64 @@
 
 
 
-    <script src=""></script>
+    <script src="static\js\toggleFature.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        //infoSet list
+        let para = document.querySelectorAll(".info");
+
+        //Exe function
+        function toggleFeature(index) {
+            para[index].classList.toggle("expand");
+        }
+    
+        document.getElementById("vec1").addEventListener("click", function () {toggleFeature(0);});
+        document.getElementById("vec2").addEventListener("click", function () {toggleFeature(1);});
+        document.getElementById("vec3").addEventListener("click", function () {toggleFeature(2);});
+
+
+
+        //rmv overlay
+        let lastArticles=document.querySelectorAll(".lastArt")
+        let overlay=document.querySelector(".overlay")
+        let hideC = document.querySelector(".hideContent");
+        let hideP = document.querySelector(".hide")
+
+        hideC.addEventListener("click", function() {
+            overlay.style.visibility = "visible";
+            hideP.style.display="none"
+        });
+
+
+        document.addEventListener("DOMContentLoaded",function(){
+            for (let i=0; i<lastArticles.length; i++){
+                lastArticles[i].classList.toggle("removeSdw")
+            }
+            hideP.style.display="none"
+        })
+        
+        
+
+
+        let seeMore=document.querySelector(".seeMore").addEventListener("click",function(){
+            showOthArticles()
+        })
+        
+
+        
+
+        function showOthArticles(){
+            for (let i=0; i<lastArticles.length; i++){
+                lastArticles[i].classList.toggle("removeSdw")
+                lastArticles[i].classList.toggle("lastA")
+            }
+            overlay.style.visibility="hidden"
+            hideP.style.display="flex"
+            hideP.classList.add("hideCont")
+
+        }
+
+    </script>
 </body>
 </html>
