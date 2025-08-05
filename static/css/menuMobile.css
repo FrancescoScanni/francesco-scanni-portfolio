@@ -1,12 +1,42 @@
-.menuBox{
-    margin: 6px 0px;
-    margin-right: 24px;
-}
 .bar{
-  width: 34px;
+  background-color: #484848;
   height: 3px;
-  background-color: #333;
 }
-.bar1,.bar2{
-    margin-bottom: 8px;
+#menuBox{
+  width: 36px;
+  height: 30px;
+}
+
+
+
+.open .bar {
+    transform: scale(0.8);
+    height: 5px;
+}
+@keyframes fadeInSlow {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeOutSlow {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+.show {
+  display: flex !important;
+  animation: fadeInSlow 0.6s ease forwards;
+}
+.hide {
+  animation: fadeOutSlow 0.6s ease forwards;
 }
