@@ -8,17 +8,17 @@
 </head>
 <body class="scroll-smooth">
     <!--HomeButton-->
-    <div class="mt-[87vh] ml-[82vw] homeSphere w-[44px] h-[44px] bg-[#D9D9D9] rounded-[400px] flex justify-center items-center border border-[#1b1b1b] fixed z-20">
+    <div class="mt-[87vh] ml-[82vw] homeSphere w-[44px] h-[44px] bg-[#D9D9D9] rounded-[400px] flex justify-center items-center border border-[#1b1b1b] fixed z-20         ">
         <a href="#"><img class="w-[28px] h-[28px] active:scale-[1.2] transition-transform duration-300" src="static\media\images\Home.png" alt="home"></a>
     </div>
 
 
     <!--Header-->
-    <div class="header grid grid-cols-2 h-[70px] px-0 bg-[#1B1B1B] flex justify-center items-center">
-        <div class="pfpCircle bg-[#080808] w-[45px] h-[45px] ml-[24px] flex justify-center items-center rounded-[600px] active:scale-[1.1] transition-transform duration-300"><a href="#"><img src="static\media\images\logo.png" class="pfp w-[24px] h-[24px]" alt="pfp"></a></div>
+    <div class="header grid grid-cols-2 h-[70px] px-0 bg-[#1B1B1B] flex justify-center items-center             lg:ml-[6.6%] lg:absolute lg:w-[86%] lg:rounded-b-[8px] lg:flex lg:justify-between lg:pl-[96px] lg:pr-[54px]">
         
-
-        <div class="relative flex justify-end">
+        <!--mobile-->
+        <div class="pfpCircle bg-[#080808] w-[45px] h-[45px] ml-[24px] flex justify-center items-center rounded-[600px] active:scale-[1.1] transition-transform duration-300          lg:hidden"><a href="#"><img src="static\media\images\logo.png" class="pfp w-[24px] h-[24px]" alt="pfp"></a></div>
+        <div class="relative flex justify-end          lg:hidden">
             <!-- Menu Button -->
             <div id="menuBox" class="menuBox mr-[24px] flex flex-col justify-between items-end w-[30px] h-[24px] cursor-pointer z-50">
                 <div class="bar bar1 w-full h-[3px] rounded transition-all duration-300"></div>
@@ -43,24 +43,37 @@
             </nav>
         </div>
 
+
+        <!--desktop-->
+        <div class="hidden lg:flex lg:gap-[70px]">
+            <p class="lg:text-[#9C9C9C] ibm lg:text-[14px] lg:tracking-[0.14px]">About me</p>
+            <p class="lg:text-[#9C9C9C] ibm lg:text-[14px] lg:tracking-[0.14px]">Projects</p>
+            <p class="lg:text-[#9C9C9C] ibm lg:text-[14px] lg:tracking-[0.14px]">Articles</p>
+            <p class="lg:text-[#9C9C9C] ibm lg:text-[14px] lg:tracking-[0.14px]">Contacts</p>
+        </div>
+        <div class="hidden lg:flex lg:gap-[20px]">
+            <a href=""><img src="static\media\images\GitHub.png" class=""></a>
+            <a href=""><img src="static\media\images\Gmail.png" class=""></a>
+            <a href=""><img src="static\media\images\LinkedIn.png" class=""></a>
+        </div>
     </div>
 
 
     <!--Hero1/Intro-->
-    <div class="container mx-auto h-[750px] bg-[#080808]">
-        <div class="introBox w-[100vw] flex flex-col justify-center items-center">
-            <div class="pfpCircle bg-[#1B1B1B] w-[175px] h-[175px] mt-[30px]  flex justify-center items-center rounded-[600px]"><img src="static\media\images\logo.png" class="pfp w-[105px] h-[105px]" alt="pfp"></div>
+    <div class="container mx-auto h-[750px] bg-[#080808]          ">
+
+        <!--mobile-->
+        <div class="introBox w-auto flex flex-col justify-center items-center          lg:hidden">
+            <div class="pfpCircle bg-[#1B1B1B] w-[175px] h-[175px] mt-[30px]  flex justify-center items-center rounded-[600px]          lg:mt-[220px]"><img src="static\media\images\logo.png" class="pfp w-[105px] h-[105px]" alt="pfp"></div>
             <div class="name raleway mt-[12px] text-white text-[32px] font-extrabold">Francesco Scanni</div>
             <div class="description ibm mx-[26px] mt-[16px] text-[#9C9C9C] text-center font-ibm text-[10px] not-italic font-bold leading-[24px] tracking-[0.1px]">Hi! I'm Francesco Scanni, 18, an IT student who loves coding, AI, and cybersecurity. I'm also a scout, drummer, and gymbro. This portfolio shares what I’ve built and enjoyed along the way.</div>
             <div class="aboutMe mt-[28px] py-[14px] pl-[32px] pr-[28px] inline-flex justify-center items-center gap-[14px] rounded-[4px] border border-[#62BA1B] bg-[#3F8E00] shadow-[0_8px_30px_rgba(63,142,0,0.5)]">
                 <div class="innerButton">
                     <input type="button" value="About me" class="button text-white ibm text-[16px] font-bold"></div>
                     <img src="static\media\images\vector.png" class="vectorMain mt-[4px]">
-                </div>
-                
+            </div>
         </div>
-
-        <div class="plSkillsBox mt-[68px]">
+        <div class="plSkillsBox mt-[68px]          lg:hidden">
             <div class='codedW ibm text-white text-[16px] font-normal   flex justify-center'>Coded with</div>
             <div class="plSet grid mt-[20px] grid-cols-2 px-[45px]">
                 <div class="pl inst py"><img src="static\media\images\Python.png" alt=""><span class="text-[16px] ml-[8px]">Python</span></div>
@@ -69,6 +82,33 @@
                 <div class="pl inst html mt-[22px] ml-[12.5px]"><img src="static\media\images\Html 5.png" alt=""><span class="text-[14px] ml-[4px]">HTML & CSS</span></div>
             </div>
         </div>
+
+
+        <!--desktop-->
+        <div class="hidden lg:flex lg:items-center lg:pt-[25vh] lg:px-[12%]     ">
+            <div class="lg:flex lg:flex-col justify-center lg:w-[51%] lg:items-start lg:mt-[40px]      lg:w-[50%]    xl:w-[58%]">
+
+                <div class="text-white raleway font-black text-[32px] lg:text-[220%]">Francesco Scanni</div>
+                <div class="description mt-[16px] text-[#9C9C9C] ibm text-[75%] xl:text-[17px] font-normal leading-[24px] tracking-[0.1px] font-normal lg:leading-[1.71] lg:tracking-[0.14px]">Hi! I'm Francesco Scanni, 18, an IT student with a passion for coding, cybersecurity, and AI. I enjoy learning by doing and love creative problem-solving. I'm also a scout, drummer and gymbro. This portfolio shows what I’ve learned, built, and enjoyed along the way.</div>
+                <div class="aboutMe mt-[20px] py-[14px] pl-[32px] pr-[28px] lg:w-[300px] inline-flex justify-center items-center gap-[14px] rounded-[4px] border border-[#62BA1B] bg-[#3F8E00] shadow-[0_8px_30px_rgba(63,142,0,0.5)]">
+                    <div class="innerButton">
+                        <input type="button" value="Let's get started" class="button text-white ibm text-[16px] font-bold"></div>
+                        <img src="static\media\images\vector.png" class="vectorMain mt-[4px]">
+                </div>
+            </div>
+            <div class="lg:w-[50%] xl:w-[40%] lg:h-[100%]  lg:flex lg:justify-end"><div class="pfpCircle bg-[#1B1B1B] w-[175px] h-[175px]  flex justify-center items-center rounded-[600px]          lg:h-[320px] lg:w-[320px]    xl:h-[350px] xl:w-[350px]"><img src="static\media\images\logo.png" class="pfp w-[105px] h-[105px]          lg:w-[175px] lg:h-[175px]     xl:w-[200px] xl:h-[200px]" alt="pfp"></div></div>  
+        </div>
+
+        <div class="plSkillsBox mt-[68px]          lg:hidden">
+            <div class='codedW ibm text-white text-[16px] font-normal   flex justify-center'>Coded with</div>
+            <div class="plSet grid mt-[20px] grid-cols-2 px-[45px]">
+                <div class="pl inst py"><img src="static\media\images\Python.png" alt=""><span class="text-[16px] ml-[8px]">Python</span></div>
+                <div class="pl inst js ml-[12.5px]"><img src="static\media\images\JavaScript.png" alt=""><span class="text-[16px] ml-[6px]">Javascript</span></div>
+                <div class="pl inst jv mt-[22px]"><img src="static\media\images\Java.png" alt=""><span class="text-[20px] ml-[10px]">Java</span></div>
+                <div class="pl inst html mt-[22px] ml-[12.5px]"><img src="static\media\images\Html 5.png" alt=""><span class="text-[14px] ml-[4px]">HTML & CSS</span></div>
+            </div>
+        </div>
+        
     </div>
 
 
@@ -245,7 +285,7 @@
 
 
             <!--Footer/Rights-->
-            <div class="container w-[100vw] h-[58px] bg-[#1B1B1B]">
+            <div class="container w-[100vw] h-[58px] bg-[#1B1B1B]          lg:w-[1024px]">
                 <p class="pt-[24px] text-[#9C9C9C] text-center text-[8px] font-normal leading-[12px] tracking-[0.08px] ibm">Francesco Scanni<br> Last update 08/2025</p>
             </div>
         </div>
@@ -263,52 +303,9 @@
 
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./static/js/tailwind.config.js"></script>
-    <script src="./static/js/toggleFeature.js"></script>
+
     <script src="./static/js/menuToggle.js"></script>
-    
-
-    <script>
-        //infoSet list
-        let para = document.querySelectorAll(".info");
-        let vectors=document.querySelectorAll(".vector");
-
-        //Exe function
-        function toggleFeature(index) {
-            para[index].classList.toggle("expand");
-            vectors[index].classList.toggle("rotateVector");
-        }
-    
-        document.getElementById("vec1").addEventListener("click", function () {toggleFeature(0);});
-        document.getElementById("vec2").addEventListener("click", function () {toggleFeature(1);});
-        document.getElementById("vec3").addEventListener("click", function () {toggleFeature(2);});
-
-
-
-        //rmv overlay
-        let lastArticles = document.querySelectorAll(".lastArt");
-        let overlay = document.querySelector(".overlay");
-        let seeMore = document.querySelector(".seeMore");
-
-        document.addEventListener("DOMContentLoaded", function () {
-        for (let i = 0; i < lastArticles.length; i++) {
-            lastArticles[i].classList.toggle("removeSdw");
-        }
-        });
-
-        seeMore.addEventListener("click", function () {
-        showOthArticles();
-        });
-
-        function showOthArticles() {
-        for (let i = 0; i < lastArticles.length; i++) {
-            lastArticles[i].classList.toggle("removeSdw");
-            lastArticles[i].classList.toggle("lastA");
-        }
-        overlay.style.visibility = "hidden";
-        seeMore.style.display = "none";
-        }
-
-    </script>
+    <script src="./static/js/toggleFeature.js"></script>
+    <script src="./static/js/articleOverlayer.js"></script>
 </body>
 </html>

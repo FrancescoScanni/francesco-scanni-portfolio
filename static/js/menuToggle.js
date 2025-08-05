@@ -1,6 +1,8 @@
+//variables
 const menuBox = document.getElementById('menuBox');
 const menu = document.getElementById('menu');
 
+//EL on menu click - menu toggle
 menuBox.addEventListener('click', () => {
   if (menu.classList.contains('show')) {
     menu.classList.remove('show');
