@@ -1,0 +1,21 @@
+/*Features*/
+.expand{
+    height: 100%;
+}
+
+/*Articles section*/
+.removeSdw{
+    box-shadow: none;
+}
+.hideOverlay {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/*Other elements*/
+.rotateVector{
+    rotate: -90deg;
+}
+.vector:active{
+  transform: scale(1.3);
+}

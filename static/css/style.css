@@ -7,112 +7,46 @@
 /*Menu*/
 @import url("menuMobile.css");
 
-
-
-
-
-
 /*Coded with*/
-.pl{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 130px;
-    height: 60px;
-    border-radius: 6px;
-    border: 2px solid #1B1B1B;
-    color: #484848;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    font-weight: 700;
-}
+@import url("plCode.css");
+
+/*Features sectiom*/
+@import url("features.css");
+@import url("funcElements.css");
+
+/*Contacts section*/
+@import url("form.css");
+
+
+
+/*Animations*/
+@import url("animation.css");
 
 
 
 
 
-/*Explore*/
-.info{
-    display: flex;
-    flex-direction: column;
-    height: 52px;
-    padding-bottom: 20px;
-    padding: 0px 28px;
-    color: #484848;
-    font-size: 20px;
-    font-weight: 800;
-    border-radius: 4px;
-    background: white;
-    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
-}
-.vector{
-    width: 20px;
-    height: 12px;
-}
-.vector {
-  transition: transform 0.2s ease;
-}
-.vector:active{
-  transform: scale(1.3);
-}
-
-
-
-.proj{
-    padding: 12px 0;
-    margin-bottom: 30px;
-    padding-left: 24px;
-    padding-right: 16px;
-    border-radius: 6px;
-    background: #FFF;
-    box-shadow: 1px 3px 4px 2px rgba(0, 0, 0, 0.25);
-    display: flex;
-}
-.article{
-    width: 144px;
-    height: 192px;
-    border-radius: 10px;
-    background: #FFF;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
-.removeSdw{
-    box-shadow: none;
-}
-.hideOverlay {
-  opacity: 0;
-  pointer-events: none;
-}
-
-
-
-.overlay{
-    transition: opacity 0.5s ease;
-    opacity: 1;
-    background: linear-gradient(to top, white 60%, rgba(255, 255, 255, 0) 100%);
-}
-.lastA{
-    margin-bottom:45px;
-}
-
-
-.expand{
-    height: 100%;
-}
 
 
 
 
-.rotateVector{
-    rotate: -90deg;
-}
 
 
 
-/*ContactMe*/
-.inputItem{
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-family: "IBM Plex Mono";
-    font-size: 12px;
-    font-weight: 600;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+.vector{
+    width: 20px;
+    height: 12px;
+    transition: transform 0.2s ease;
+}
