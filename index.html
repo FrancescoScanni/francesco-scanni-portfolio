@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static\css\style.css">
+    <link rel="stylesheet" href="/static/css/style.css">
     <title>Francesco Scanni - Portfolio</title>
 </head>
 <body class="scroll-smooth">
@@ -263,9 +263,9 @@
 
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="static\js\tailwind.config.js"></script>
-    <script src="static\js\toggleFature.js"></script>
-    <script src="static\js\menuToggle.js"></script>
+    <script src="/static/js/tailwind.config.js"></script>
+    <script src="/static/js/toggleFeature.js"></script>
+    <script src="/static/js/menuToggle.js"></script>
     
 
     <script>
@@ -288,15 +288,12 @@
         //rmv overlay
         let lastArticles = document.querySelectorAll(".lastArt");
         let overlay = document.querySelector(".overlay");
-        let hideC = document.querySelector(".hideContent");
-        let hideP = document.querySelector(".hide");
         let seeMore = document.querySelector(".seeMore");
 
         document.addEventListener("DOMContentLoaded", function () {
         for (let i = 0; i < lastArticles.length; i++) {
             lastArticles[i].classList.toggle("removeSdw");
         }
-        hideP.style.display = "none";
         });
 
         seeMore.addEventListener("click", function () {
@@ -309,19 +306,8 @@
             lastArticles[i].classList.toggle("lastA");
         }
         overlay.style.visibility = "hidden";
-        hideP.style.display = "flex";
         seeMore.style.display = "none";
         }
-
-        hideC.addEventListener("click", function () {
-        for (let i = 0; i < lastArticles.length; i++) {
-            lastArticles[i].classList.toggle("removeSdw");
-            lastArticles[i].classList.toggle("lastA");
-        }
-        overlay.style.visibility = "visible";
-        hideP.style.display = "none";
-        seeMore.style.display = "flex";
-        });
 
     </script>
 </body>
