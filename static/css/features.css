@@ -17,6 +17,7 @@
 
 /*Projects*/
 .proj{
+    max-width: 320px;
     padding: 12px 0;
     margin-bottom: 30px;
     padding-left: 24px;
@@ -30,7 +31,7 @@
 
 /*Articles*/
 .article{
-    width: 144px;
+    width: 140px;
     height: 192px;
     border-radius: 10px;
     background: #FFF;

@@ -7,11 +7,17 @@
     <title>Francesco Scanni - Portfolio</title>
 </head>
 <body class="scroll-smooth">
-    <!--HomeButton-->
-    <div class="mt-[87vh] ml-[82vw] homeSphere w-[44px] h-[44px] bg-[#D9D9D9] rounded-[400px] flex justify-center items-center  fixed z-20         lg:w-[60px] lg:h-[60px] lg:mt-[86vh] lg:ml-[86vw] xl:ml-[90vw]">
-        <a href="#"><img class="w-[28px] h-[28px] active:scale-[1.2] transition-transform duration-300" src="static\media\images\Home.png" alt="home"></a>
+
+    <!--Success pop up-->
+    <div id="popup" class="fixed top-8 bg-gradient-to-r from-green-500 to-transparent text-white text-[18px] px-8 py-4 font-bold opacity-0 pointer-events-none transition-opacity duration-500 z-50 flex items-center gap-2 shadow-lg">
+        <img src="https://img.icons8.com/ios-filled/24/ffffff/checkmark--v1.png" alt="check" class="w-5 h-5" />
+        <span>Successful</span>
     </div>
 
+    <!--HomeButton-->
+    <div class="hover:scale-[1.1] transition duration-[500ms] mt-[87vh] ml-[82vw] homeSphere w-[44px] h-[44px] bg-[#D9D9D9] rounded-[400px] flex justify-center items-center  fixed z-20         lg:w-[60px] lg:h-[60px] lg:mt-[86vh] lg:ml-[86vw] xl:ml-[90vw]">
+        <a href="#"><img class="w-[28px] h-[28px] active:scale-[1.2] transition-transform duration-300" src="static\media\images\Home.png" alt="home"></a>
+    </div>
 
     <!--Header-->
     <div class="header grid grid-cols-2 h-[70px] px-0 bg-[#1B1B1B] flex justify-center items-center             lg:ml-[6.6%] lg:absolute lg:w-[86%] lg:rounded-b-[8px] lg:flex lg:justify-between lg:pl-[96px] lg:pr-[54px]">
@@ -28,8 +34,13 @@
 
             <!-- Menu -->
             <nav id="menu" class="gap-[10px] absolute w-[100vw] top-[70px] r-[-24px] rounded p-3 hidden flex-col h-[100vh] bg-gradient-to-b from-[#080808] to-transparent">
-                <div class="redirItem flex pl-[16px] items-center">
+                <div class="redirItem flex pl-[16px] items-center justify-between">
                     <a href="#features"><p class="text-[#9C9C9C] raleway text-[24px] font-extrabold">Projects</p></a>
+                    <div class="social flex gap-[10px]">
+                        <a href="https://github.com/FrancescoScanni"><img src="static\media\images\GitHub.png" alt=""></a>
+                        <a href="https://instagram.com/francesco.scanni_"><img src="static\media\images\Gmail.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/francesco-scanni-441605351/"><img src="static\media\images\LinkedIn.png" alt=""></a>
+                    </div>
                 </div>
 
                 <div class="redirItem flex pl-[16px] items-center">
@@ -46,40 +57,41 @@
 
         <!--desktop-->
         <div class="hidden lg:flex lg:gap-[70px]">
-            <p class="lg:text-[#9C9C9C] ibm lg:text-[14px] lg:tracking-[0.14px]">About me</p>
-            <p class="lg:text-[#9C9C9C] ibm lg:text-[14px] lg:tracking-[0.14px]">Projects</p>
-            <p class="lg:text-[#9C9C9C] ibm lg:text-[14px] lg:tracking-[0.14px]">Articles</p>
-            <p class="lg:text-[#9C9C9C] ibm lg:text-[14px] lg:tracking-[0.14px]">Contacts</p>
+            <a href="#mySection" onclick="scrollWithOffset(event, 'mySection')"><p class="lg:text-[#9C9C9C] ibm lg:text-[14px] lg:tracking-[0.14px]">About me</p></a>
+            <a href="#proj"><p class="lg:text-[#9C9C9C] ibm lg:text-[14px] lg:tracking-[0.14px]">Projects</p></a>
+            <a href="#art"><p class="lg:text-[#9C9C9C] ibm lg:text-[14px] lg:tracking-[0.14px]">Articles</p></a>
+            <a href="#cont"><p class="lg:text-[#9C9C9C] ibm lg:text-[14px] lg:tracking-[0.14px]">Contacts</p></a>
         </div>
         <div class="hidden lg:flex lg:gap-[20px]">
-            <a href=""><img src="static\media\images\GitHub.png" class=""></a>
-            <a href=""><img src="static\media\images\Gmail.png" class=""></a>
-            <a href=""><img src="static\media\images\LinkedIn.png" class=""></a>
+            <a href="https://github.com/FrancescoScanni"><img src="static\media\images\GitHub.png" class=""></a>
+            <a href="https://instagram.com/francesco.scanni_"><img src="static\media\images\Gmail.png" class=""></a>
+            <a href="https://www.linkedin.com/in/francesco-scanni-441605351/"><img src="static\media\images\LinkedIn.png" class=""></a>
         </div>
     </div>
 
-
     <!--Hero1/Intro-->
-    <div class=" h-[750px] bg-[#080808]          lg:h-[700px] xl:h-[735px]">
+    <div class=" h-[765px] bg-[#080808]          lg:h-[720px] xl:h-[755px]">
 
         <!--mobile-->
-        <div class="introBox w-[100vw] flex flex-col justify-center items-center          lg:hidden">
+        <div class="introBox w-[100%] flex flex-col justify-center items-center          lg:hidden">
             <div class="pfpCircle bg-[#1B1B1B] w-[175px] h-[175px] mt-[30px]  flex justify-center items-center rounded-[600px]          lg:mt-[220px]"><img src="static\media\images\logo.png" class="pfp w-[105px] h-[105px]" alt="pfp"></div>
             <div class="name raleway mt-[12px] text-white text-[32px] font-extrabold">Francesco Scanni</div>
             <div class="description ibm mx-[26px] mt-[16px] text-[#9C9C9C] text-center font-ibm text-[10px] not-italic font-bold leading-[24px] tracking-[0.1px]">Hi! I'm Francesco Scanni, 18, an IT student who loves coding, AI, and cybersecurity. I'm also a scout, drummer, and gymbro. This portfolio shares what I’ve built and enjoyed along the way.</div>
             <div class="aboutMe mt-[28px] py-[14px] pl-[32px] pr-[28px] inline-flex justify-center items-center gap-[14px] rounded-[4px] border border-[#62BA1B] bg-[#3F8E00] shadow-[0_8px_30px_rgba(63,142,0,0.5)]">
                 <div class="innerButton">
-                    <input type="button" value="About me" class="button text-white ibm text-[16px] font-bold"></div>
-                    <img src="static\media\images\vector.png" class="vectorMain mt-[4px]">
+                    <a href="#features">
+                        <input type="button" value="Let's go" class="button text-white ibm text-[16px] font-bold"></div>
+                        <img src="static\media\images\vector.png" class="vectorMain mt-[4px]">
+                    </a>
             </div>
         </div>
-        <div class="plSkillsBox mt-[68px]          lg:hidden">
+        <div class="plSkillsBox mt-[56px] flex flex-col items-center          lg:hidden">
             <div class='codedW ibm text-white text-[16px] font-normal   flex justify-center'>Coded with</div>
-            <div class="plSet grid mt-[20px] grid-cols-2 px-[45px]">
-                <div class="pl inst py"><img src="static\media\images\Python.png" alt=""><span class="text-[16px] ml-[8px]">Python</span></div>
-                <div class="pl inst js ml-[12.5px]"><img src="static\media\images\JavaScript.png" alt=""><span class="text-[16px] ml-[6px]">Javascript</span></div>
-                <div class="pl inst jv mt-[22px]"><img src="static\media\images\Java.png" alt=""><span class="text-[20px] ml-[10px]">Java</span></div>
-                <div class="pl inst html mt-[22px] ml-[12.5px]"><img src="static\media\images\Html 5.png" alt=""><span class="text-[14px] ml-[4px]">HTML & CSS</span></div>
+            <div class="plSet grid w-[76%] mt-[20px] grid-cols-2 gap-[30px]">
+                <div class="pl w-auto inst py"><img src="static\media\images\Python.png" alt=""><span class="text-[16px] ml-[8px]">Python</span></div>
+                <div class="pl inst w-auto js"><img src="static\media\images\JavaScript.png" alt=""><span class="text-[16px] ml-[6px]">Javascript</span></div>
+                <div class="pl inst w-auto jv "><img src="static\media\images\Java.png" alt=""><span class="text-[20px] ml-[10px]">Java</span></div>
+                <div class="pl inst w-auto html"><img src="static\media\images\Html 5.png" alt=""><span class="text-[14px] ml-[4px]">HTML & CSS</span></div>
             </div>
         </div>
 
@@ -88,15 +100,18 @@
         <div class="hidden lg:flex lg:items-center lg:pt-[25vh] lg:px-[12%]">
             <div class="lg:flex lg:flex-col justify-center lg:w-[51%] lg:items-start lg:mt-[40px]      lg:w-[50%]    xl:w-[58%]">
 
-                <div class="text-white raleway font-black text-[32px] lg:text-[220%]">Francesco Scanni</div>
+                <div id="mySection"  class="text-white raleway font-black text-[32px] lg:text-[220%]">Francesco Scanni</div>
                 <div class="description mt-[16px] text-[#9C9C9C] ibm text-[75%] xl:text-[17px] font-normal leading-[24px] tracking-[0.1px] font-normal lg:leading-[1.71] lg:tracking-[0.14px]">Hi! I'm Francesco Scanni, 18, an IT student with a passion for coding, cybersecurity, and AI. I enjoy learning by doing and love creative problem-solving. I'm also a scout, drummer and gymbro. This portfolio shows what I’ve learned, built, and enjoyed along the way.</div>
-                <div class="aboutMe mt-[20px] py-[14px] pl-[32px] pr-[28px] lg:w-[300px] inline-flex justify-center items-center gap-[14px] rounded-[4px] border border-[#62BA1B] bg-[#3F8E00] shadow-[0_8px_30px_rgba(63,142,0,0.5)]">
-                    <div class="innerButton">
-                        <input type="button" value="Let's get started" class="button text-white ibm text-[16px] font-bold"></div>
-                        <img src="static\media\images\vector.png" class="vectorMain mt-[4px]">
+                <div class="aboutMe hover:scale-[1.1] transition duration-[500ms] mt-[20px] py-[14px] pl-[32px] pr-[28px] lg:w-[300px] inline-flex justify-center items-center gap-[14px] rounded-[4px] border border-[#62BA1B] bg-[#3F8E00] shadow-[0_8px_30px_rgba(63,142,0,0.5)]">
+                    
+                <div class="innerButton ">
+                    <a href="#proj">
+                    <input type="button" value="Let's get started" class="button text-white ibm text-[16px] font-bold"></div>
+                    <img src="static\media\images\vector.png" class="vectorMain mt-[4px]">
+                    </a>
                 </div>
             </div>
-            <div class="lg:w-[50%] xl:w-[40%] lg:h-[100%]  lg:flex lg:justify-end"><div class="pfpCircle bg-[#1B1B1B] w-[175px] h-[175px]  flex justify-center items-center rounded-[600px]          lg:h-[320px] lg:w-[320px]    xl:h-[350px] xl:w-[350px]"><img src="static\media\images\logo.png" class="pfp w-[105px] h-[105px]          lg:w-[175px] lg:h-[175px]     xl:w-[200px] xl:h-[200px]" alt="pfp"></div></div>  
+            <div class="hover:scale-[1.05] transition duration-[500ms] lg:w-[50%] xl:w-[40%] lg:h-[100%]  lg:flex lg:justify-end"><div class="pfpCircle bg-[#1B1B1B] w-[175px] h-[175px]  flex justify-center items-center rounded-[600px]          lg:h-[320px] lg:w-[320px]    xl:h-[350px] xl:w-[350px]"><img src="static\media\images\logo.png" class="pfp w-[105px] h-[105px]          lg:w-[175px] lg:h-[175px]     xl:w-[200px] xl:h-[200px]" alt="pfp"></div></div>  
         </div>
         <div class="hidden plSkillsBox mt-[68px]          lg:flex lg:pl-[12%] lg:flex lg:flex-col">
             <div class='codedW text-white ibm text-[14px] font-normal leading-none          lg:justify-start'>Coded with</div>
@@ -111,11 +126,9 @@
     </div>
 
 
-
-
     <!--Hero2/MainContent - mobile-->
     <div class=" h-[240px] lg:hidden">
-        <div id="features" class="explore raleway w-[100vw] text-[#080808] text-[28px] font-black pt-[35px] flex justify-center">Explore.</div>
+        <div id="features" class="explore raleway w-[100%] text-[#080808] text-[28px] font-black pt-[35px] flex justify-center">Explore.</div>
         <div class="features mt-[22px] grid grid-cols-1">
 
 
@@ -128,8 +141,8 @@
                 
 
                 <div class="contentProj">
-                    <p class="descProj w-[256px] mt-[12px] text-[#484848] text-[10px] font-normal leading-[14px] ibm">These are projects I’ve built in school and in my free time. I enjoy turning ideas into code and learning tools. Each one shows a bit of my passion and growth.</p>
-                    <div class="projSet flex flex-col my-[30px]">
+                    <p class="descProj w-[68%] mt-[12px] text-[#484848] text-[10px] font-normal leading-[14px] ibm">These are projects I’ve built in school and in my free time. I enjoy turning ideas into code and learning tools. Each one shows a bit of my passion and growth.</p>
+                    <div class="projSet flex flex-col my-[30px] items-center">
 
                         <!--Proj1-->
                         <div class="proj">
@@ -180,9 +193,9 @@
                 
 
                 <div class="contentArt">
-                    <p class="descArt w-[256px] mt-[12px] text-[#484848] text-[10px] font-normal ibm leading-[14px]">Here are some articles I’ve written on tech, AI, and digital culture. I enjoy sharing what I learn, making complex ideas simple, and reflecting on how technology shapes our lives.</p>
+                    <p class="descArt w-[68%] mt-[12px] text-[#484848] text-[10px] font-normal ibm leading-[14px]">Here are some articles I’ve written on tech, AI, and digital culture. I enjoy sharing what I learn, making complex ideas simple, and reflecting on how technology shapes our lives.</p>
                     
-                    <div class="artSet w-[auto] grid grid-cols-2 mt-[30px] gap-[30px] relative pb-[6px]">
+                    <div class="artSet grid grid-cols-2 mt-[30px] gap-[30px] relative pb-[6px]">
 
                         <div class="article">
                             <div class="artBox">
@@ -258,24 +271,25 @@
 
 
             <!--Hero2.1/Contacts-->
-            <div class=" container pt-[52px] h-[530px] bg-[#080808] flex flex-col items-center z-0">
+            <div class="w-auto pt-[52px] h-[530px] bg-[#080808] flex flex-col items-center z-0">
                 <div class="contMe raleway text-white text-[28px] font-black">Contact me</div>
-                <form class="inputSet mt-[24px] w-[200px] flex flex-col items-center">
+                <form id="formContacts" class="inputSet mt-[24px] w-[200px] flex flex-col items-center">
                     <div class="inputItem">
                         <p class="ibm">Email</p>
                         <input
                             class="h-[32px] w-[200px] px-[12px] mt-[5px] rounded-[4px] bg-[#F8F8F8] border border-[#D8D8D8] text-[#757575] font-normal ibm text-[10px] leading-[21px]"
                             type="email"
                             placeholder="Please enter your email"
+                            required
                         />
                     </div>
                     <div class="inputItem mt-[18px]">
                         <p class="ibm">Mobile</p>
-                        <input class="h-[32px] w-[200px] px-[12px] mt-[5px] rounded-[4px] bg-[#F8F8F8] border border-[#D8D8D8] text-[#757575] font-normal text-[10px] leading-[21px] ibm" type="tel" placeholder="Enter mobile">
+                        <input class="h-[32px] w-[200px] px-[12px] mt-[5px] rounded-[4px] bg-[#F8F8F8] border border-[#D8D8D8] text-[#757575] font-normal text-[10px] leading-[21px] ibm" type="tel" placeholder="Enter mobile (optional)">
                     </div>
                     <div class="inputItem mt-[18px]">
                         <p class="ibm">Message</p>
-                        <input class="px-[12px] w-[200px] mt-[5px] rounded-[4px] bg-[#F8F8F8] border border-[#D8D8D8] h-[92px] text-[#757575] ibm text-[10px] font-normal leading-[21px]" type="text" placeholder="Enter your message">
+                        <input class="px-[12px] w-[200px] mt-[5px] rounded-[4px] bg-[#F8F8F8] border border-[#D8D8D8] h-[92px] text-[#757575] ibm text-[10px] font-normal leading-[21px]" type="text" placeholder="Enter your message" required>
                     </div>
 
                     <input class="flex w-[136px] h-[36px] mt-[24px] justify-center items-center rounded-[4px] border border-[#62BA1B] bg-[#3F8E00] shadow-[0_8px_30px_rgba(63,142,0,0.5)] text-white text-[14px] font-extrabold ibm" type="submit" value="Submit">
@@ -286,168 +300,168 @@
 
 
             <!--Footer/Rights-->
-            <div class="container w-[100vw] h-[58px] bg-[#1B1B1B]          lg:w-[1024px]">
+            <div class="w-[100%] h-[58px] bg-[#1B1B1B]          lg:w-[1024px]">
                 <p class="pt-[24px] text-[#9C9C9C] text-center text-[8px] font-normal leading-[12px] tracking-[0.08px] ibm">Francesco Scanni<br> Last update 08/2025</p>
             </div>
         </div>
     </div>
 
 
-
-
-
     <!--Hero2/MainContent - desktop-->
+    <div>
+        <!--Projects-->
+        <div id="proj" class="deskProj hidden           lg:relative lg:flex lg:flex-col lg:items-center lg:py-[80px]">
+            <div class="flex flex-col items-center w-[570px]">
+                <p class="text-[#080808] text-center font-raleway text-[34px] font-bold leading-none">My projects</p>
+                <p class="text-[#484848] text-center ibm text-[14px] font-normal leading-[24px] tracking-[0.14px] mt-[20px]">These are some projects I’ve built during school and in my free time. I love turning ideas into code, learning new tools, and solving real problems. Each project shows a bit of my passion and progress.</p>
+            </div>
+            <div class="grid grid-cols-1 gap-[80px] mt-[44px] pb-[70px]">
+                <div class="project1 flex lg:w-[780px] xl:w-[892px] h-[300px]">
+                    <div class="text w-[50%]">
+                        <div class="inline-flex px-[10px] items-start gap-[10px] rounded-[60px] bg-[#FFF6E9] mt-[28px]"><p class="text-[#FFA217] ibm text-[12px] font-bold leading-[24px] tracking-[0.12px]">Analysis</p></div>
+                        <p class="text-[#080808] raleway xl:text-[24px] font-bold leading-none xl:mt-[20px] lg:mt-[16px] lg:text-[20px]">Job related AI Bias - ImGen</p>
+                        <p class="text-[#9C9C9C] ibm xl:text-[14px] font-semibold xl:leading-[22px] lg:leading-[20px] tracking-[0.14px] mt-[10px] lg:text-[12px] pr-[10px]">I built a website to show how image-generating AIs can reflect bias. I tested different prompts and compared results, noticing patterns in gender, race, and stereotypes. The site includes examples and short reflections on what I found.</p>
+                        <div id="jobAI" class="hover:scale-[1.1] transition duration-[500ms] cursor-pointer inline-flex items-center gap-[10px] px-[24px] py-[12px] rounded-[4px] bg-[#FFA217] shadow-[0_8px_30px_rgba(42,176,144,0.10)] lg:mt-[16px] xl:mt-[20]"><input class="text-white ibm text-[14px] font-bold leading-none" type="button" value="Visit site"><img src="static\media\images\vector.png" class=""></div>
+                    </div>
+                    <div class="w-[50%]">
+                        <img src="static\media\images\projDesk1.png" alt="">
+                    </div>
+                </div>
 
-    <!--Projects-->
-    <div class="deskProj hidden           lg:relative lg:flex lg:flex-col lg:items-center lg:py-[80px]">
-        <div class="flex flex-col items-center w-[570px]">
-            <p class="text-[#080808] text-center font-raleway text-[34px] font-bold leading-none">My projects</p>
-            <p class="text-[#484848] text-center ibm text-[14px] font-normal leading-[24px] tracking-[0.14px] mt-[20px]">These are some projects I’ve built during school and in my free time. I love turning ideas into code, learning new tools, and solving real problems. Each project shows a bit of my passion and progress.</p>
+
+                <div class="project2 flex flex-row-reverse lg:w-[780px] xl:w-[892px] h-[300px]">
+                    <div class="text w-[50%] pl-[30px]">
+                        <div class="inline-flex px-[10px] items-start gap-[10px] rounded-[60px] bg-[#D0E6FF] mt-[28px]"><p class="text-[#000AFF] ibm text-[12px] font-bold leading-[24px] tracking-[0.12px]">Education</p></div>
+                        <p class="text-[#080808] raleway xl:text-[24px] font-bold leading-none xl:mt-[20px] lg:mt-[16px] lg:text-[20px]">Linear Regression - AI & ML</p>
+                        <p class="text-[#9C9C9C] ibm xl:text-[14px] font-semibold xl:leading-[22px] lg:leading-[20px] tracking-[0.14px] mt-[10px] lg:text-[12px] pr-[10px]">I followed a guided project to learn linear regression with Python and scikit-learn, aiming to predict a child’s height based on the parent’s height. I learned how to prepare data, train a model, and check its accuracy. </p>
+                        <a class="w-[90%]" href="static\media\docs\linear_regressionML.ipynb" download><div class="hover:scale-[1.1] transition duration-[500ms] inline-flex items-center gap-[10px] px-[24px] py-[12px] rounded-[4px] bg-[#000AFF] shadow-[0_8px_30px_rgba(42,176,144,0.10)] lg:mt-[16px] xl:mt-[20]"><input id="pyML" class="text-white ibm text-[14px] font-bold leading-none" type="button" value="View documentation"><img src="static\media\images\vector.png" class=""></div></a>
+                    </div>
+                    <div class="w-[50%]">
+                        <img src="static\media\images\projDesk2.png" alt="">
+                    </div>
+                </div>
+
+
+                <div class="project3 flex lg:w-[780px] xl:w-[892px] h-[300px]">
+                    <div class="text w-[50%]">
+                        <div class="inline-flex px-[10px] items-start gap-[10px] rounded-[60px] bg-[#E0FFF8] mt-[28px]"><p class="text-[#2AB090] ibm text-[12px] font-bold leading-[24px] tracking-[0.12px]">Entertainment</p></div>
+                        <p class="text-[#080808] raleway xl:text-[24px] font-bold leading-none xl:mt-[20px] lg:mt-[16px] lg:text-[20px]">Whack a Mole - PC Game</p>
+                        <p class="text-[#9C9C9C] ibm xl:text-[14px] font-semibold xl:leading-[22px] lg:leading-[20px] tracking-[0.14px] mt-[10px] lg:text-[12px] pr-[10px]">I made a Whack-a-Mole game using HTML, CSS, and JavaScript. It was a fun way to learn how to handle clicks and use timers. The game is simple, fast, and enjoyable. Hopefully, it’ll receive some updates soon!</p>
+                        <div  id="wam" class="hover:scale-[1.1] transition duration-[500ms] cursor-pointer inline-flex items-center gap-[10px] px-[24px] py-[12px] rounded-[4px] bg-[#2AB090] shadow-[0_8px_30px_rgba(42,176,144,0.10)] lg:mt-[16px] xl:mt-[20]"><input class="text-white ibm text-[14px] font-bold leading-none" type="button" value="Play now"><img src="static\media\images\vector.png" class=""></div>
+                    </div>
+                    <div class="w-[50%]">
+                        <img src="static\media\images\projDesk3.png" alt="">
+                    </div>
+                </div>
+
+
+
+                
+            </div>
         </div>
-        <div class="grid grid-cols-1 gap-[80px] mt-[44px] pb-[70px]">
-            <div class="project1 flex lg:w-[780px] xl:w-[892px] h-[300px]">
-                <div class="text w-[50%]">
-                    <div class="inline-flex px-[10px] items-start gap-[10px] rounded-[60px] bg-[#FFF6E9] mt-[28px]"><p class="text-[#FFA217] ibm text-[12px] font-bold leading-[24px] tracking-[0.12px]">Analysis</p></div>
-                    <p class="text-[#080808] raleway xl:text-[24px] font-bold leading-none xl:mt-[20px] lg:mt-[16px] lg:text-[20px]">Job related AI Bias - ImGen</p>
-                    <p class="text-[#9C9C9C] ibm xl:text-[14px] font-semibold xl:leading-[22px] lg:leading-[20px] tracking-[0.14px] mt-[10px] lg:text-[12px] pr-[10px]">I built a website to show how image-generating AIs can reflect bias. I tested different prompts and compared results, noticing patterns in gender, race, and stereotypes. The site includes examples and short reflections on what I found.</p>
-                    <div class="inline-flex items-center gap-[10px] px-[24px] py-[12px] rounded-[4px] bg-[#FFA217] shadow-[0_8px_30px_rgba(42,176,144,0.10)] lg:mt-[16px] xl:mt-[20]"><input class="text-white ibm text-[14px] font-bold leading-none" type="button" value="Visit site"><img src="static\media\images\vector.png" class=""></div>
-                </div>
-                <div class="w-[50%]">
-                    <img src="static\media\images\projDesk1.png" alt="">
-                </div>
+        <!--Feedback-->
+        <div class="deskFeedB hidden bg-[#080808]          lg:relative lg:flex lg:flex-col lg:items-center lg:py-[80px]">
+            <div class="flex flex-col items-center w-[570px]">
+                <p class="text-white text-center raleway text-[34px] font-extrabold leading-none">Testimonials</p>
+                <p class="text-[#9C9C9C] text-center ibm text-[14px] font-normal leading-[24px] tracking-[0.14px] mt-[20px]">Here are some short messages from teachers, classmates, and collaborators who have worked with me. Their feedback means a lot and reflects how I try to bring passion, focus, and teamwork into everything I do.</p>
             </div>
-
-
-            <div class="project2 flex flex-row-reverse lg:w-[780px] xl:w-[892px] h-[300px]">
-                <div class="text w-[50%] pl-[30px]">
-                    <div class="inline-flex px-[10px] items-start gap-[10px] rounded-[60px] bg-[#D0E6FF] mt-[28px]"><p class="text-[#000AFF] ibm text-[12px] font-bold leading-[24px] tracking-[0.12px]">Education</p></div>
-                    <p class="text-[#080808] raleway xl:text-[24px] font-bold leading-none xl:mt-[20px] lg:mt-[16px] lg:text-[20px]">Linear Regression - AI & ML</p>
-                    <p class="text-[#9C9C9C] ibm xl:text-[14px] font-semibold xl:leading-[22px] lg:leading-[20px] tracking-[0.14px] mt-[10px] lg:text-[12px] pr-[10px]">I followed a guided project to learn linear regression with Python and scikit-learn, aiming to predict a child’s height based on the parent’s height. I learned how to prepare data, train a model, and check its accuracy. </p>
-                    <div class="inline-flex items-center gap-[10px] px-[24px] py-[12px] rounded-[4px] bg-[#000AFF] shadow-[0_8px_30px_rgba(42,176,144,0.10)] lg:mt-[16px] xl:mt-[20]"><input class="text-white ibm text-[14px] font-bold leading-none" type="button" value="View documentation"><img src="static\media\images\vector.png" class=""></div>
-                </div>
-                <div class="w-[50%]">
-                    <img src="static\media\images\projDesk2.png" alt="">
-                </div>
-            </div>
-
-
-            <div class="project3 flex lg:w-[780px] xl:w-[892px] h-[300px]">
-                <div class="text w-[50%]">
-                    <div class="inline-flex px-[10px] items-start gap-[10px] rounded-[60px] bg-[#E0FFF8] mt-[28px]"><p class="text-[#2AB090] ibm text-[12px] font-bold leading-[24px] tracking-[0.12px]">Entertainment</p></div>
-                    <p class="text-[#080808] raleway xl:text-[24px] font-bold leading-none xl:mt-[20px] lg:mt-[16px] lg:text-[20px]">Whack a Mole - PC Game</p>
-                    <p class="text-[#9C9C9C] ibm xl:text-[14px] font-semibold xl:leading-[22px] lg:leading-[20px] tracking-[0.14px] mt-[10px] lg:text-[12px] pr-[10px]">I made a Whack-a-Mole game using HTML, CSS, and JavaScript. It was a fun way to learn how to handle clicks and use timers. The game is simple, fast, and enjoyable. Hopefully, it’ll receive some updates soon!</p>
-                    <div class="inline-flex items-center gap-[10px] px-[24px] py-[12px] rounded-[4px] bg-[#2AB090] shadow-[0_8px_30px_rgba(42,176,144,0.10)] lg:mt-[16px] xl:mt-[20]"><input class="text-white ibm text-[14px] font-bold leading-none" type="button" value="Play now"><img src="static\media\images\vector.png" class=""></div>
-                </div>
-                <div class="w-[50%]">
-                    <img src="static\media\images\projDesk3.png" alt="">
-                </div>
-            </div>
-
-
-
             
-        </div>
-    </div>
-    <!--Feedback-->
-    <div class="deskFeedB hidden bg-[#080808]          lg:relative lg:flex lg:flex-col lg:items-center lg:py-[80px]">
-        <div class="flex flex-col items-center w-[570px]">
-            <p class="text-white text-center raleway text-[34px] font-extrabold leading-none">Testimonials</p>
-            <p class="text-[#9C9C9C] text-center ibm text-[14px] font-normal leading-[24px] tracking-[0.14px] mt-[20px]">Here are some short messages from teachers, classmates, and collaborators who have worked with me. Their feedback means a lot and reflects how I try to bring passion, focus, and teamwork into everything I do.</p>
-        </div>
-
-        <div class="projects grid grid-cols-2 gap-[60px] mt-[44px] pb-[70px] px-[100px] xl:px-[180px]">
-            <div class="feed1 flex xl:w-[445px] lg:w-[400px] flex-col pl-[30px] pt-[30px] pb-[30px] pr-[6px]">
-                <div class="text-[#9C9C9C] ibm text-[13px] font-normal leading-[24px] tracking-[0.14px]"><p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
-                <div class="client flex gap-[20px] items-center mt-[30px]">
-                    <div class="flex justify-center items-center w-[50px] h-[50px] bg-white rounded-[400px]"><img class=" " src="" alt=""></div>
-                    <p class="text-white text-center raleway text-[18px] font-bold leading-none">Client name</p>
+            <div class="text-white text-[20px] mt-[80px] flex flex-col items-center">This section is empty for now.
+                <img class="w-[80px] h-[80px] mt-[20px]" src="static\media\images\noContent.png" alt="">
+            </div>
+            
+            <!--
+            <div class="projects grid grid-cols-2 gap-[60px] mt-[44px] pb-[70px] px-[100px] xl:px-[180px]">
+                <div class="feed1 flex xl:w-[445px] lg:w-[400px] flex-col pl-[30px] pt-[30px] pb-[30px] pr-[6px]">
+                    <div class="text-[#9C9C9C] ibm text-[13px] font-normal leading-[24px] tracking-[0.14px]"><p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+                    <div class="client flex gap-[20px] items-center mt-[30px]">
+                        <div class="flex justify-center items-center w-[50px] h-[50px] bg-white rounded-[400px]"><img class=" " src="" alt=""></div>
+                        <p class="text-white text-center raleway text-[18px] font-bold leading-none">Client name</p>
+                    </div>
                 </div>
+
+
+                <div class="feed2 flex xl:w-[445px] lg:w-[400px] flex-col pl-[30px] pt-[30px] pb-[30px] pr-[6px]">
+                    <div class="text-[#9C9C9C] ibm text-[13px] font-normal leading-[24px] tracking-[0.14px]"><p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+                    <div class="client flex gap-[20px] items-center mt-[30px]">
+                        <div class="flex justify-center items-center w-[50px] h-[50px] bg-white rounded-[400px]"><img class=" " src="" alt=""></div>
+                        <p class="text-white text-center raleway text-[18px] font-bold leading-none">Client name</p>
+                    </div>
+                </div>         
+            </div>
+            -->
+            
+
+        </div>
+        <!--Articles-->
+        <div id="art" class="deskArt hidden bg-[#ffffff]          lg:relative lg:flex lg:flex-col lg:items-center lg:pt-[80px] lg:mb-[70px] ">
+            <div class="flex flex-col items-center w-[570px]">
+                <p class="text-[#080808] text-center raleway text-[34px] font-extrabold leading-none">My articles</p>
+                <p class="text-[#484848] text-center ibm text-[14px] font-normal leading-[24px] tracking-[0.14px] mt-[20px]">Here you can find some articles I’ve written about tech, AI, and digital culture. I like sharing what I learn, explaining complex topics in a simple way, and reflecting on how technology shapes our lives. Writing helps me think deeper and stay curious.</p>
             </div>
 
+            <div class="articles grid grid-cols-2 gap-[45px] lg:gap-[65px] mt-[44px] px-[100px] xl:px-[180px]">
+                    <div class="flex flex-col ">
+                            <div class=""><img src="static\media\images\artDesk1.png" class=""></div>
+                            <div class="flex flex-col justify-start mt-[40px]">
+                                <p class="text-[#080808] raleway text-[24px] font-black leading-none">Bridging Generations and Tech...how?</p>
+                                <p class="text-[#484848] ibm text-[90%] font-normal leading-[24px] tracking-[0.14px] mt-[20px] max-w-[370px] xl:max-w-[430px] h-[96px]">Technology is shaping how generations connect, learn, and share—blending tradition with innovation. But, how does it affect each of us?</p>
+                                <div class="w-[147px] h-[38px] inline-flex items-center gap-[10px] px-[24px] py-[10px] rounded-[4px] border border-[#62BA1B] bg-[#3F8E00] shadow-[0_8px_30px_0_rgba(63,142,0,0.30)] mt-[20px] hover:scale-[1.1] transition duration-[500ms]"><input class="text-white font-['IBM_Plex_Mono'] text-[14px] font-bold leading-none" type="button" value="Read about"><img src="static\media\images\vector.png" class=""></div>
+                            </div>
+                    </div>
 
-            <div class="feed2 flex xl:w-[445px] lg:w-[400px] flex-col pl-[30px] pt-[30px] pb-[30px] pr-[6px]">
-                <div class="text-[#9C9C9C] ibm text-[13px] font-normal leading-[24px] tracking-[0.14px]"><p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
-                <div class="client flex gap-[20px] items-center mt-[30px]">
-                    <div class="flex justify-center items-center w-[50px] h-[50px] bg-white rounded-[400px]"><img class=" " src="" alt=""></div>
-                    <p class="text-white text-center raleway text-[18px] font-bold leading-none">Client name</p>
-                </div>
-            </div>         
+
+                    <div class="flex flex-col ">
+                            <div class=""><img src="static\media\images\artDesk2.png" class=""></div>
+                            <div class="flex flex-col justify-start mt-[40px]">
+                                <p class="text-[#080808] raleway text-[22px] font-black leading-none">The Core of innovation: Tech Ecosystems</p>
+                                <p class="text-[#484848] ibm text-[90%] font-normal leading-[24px] tracking-[0.14px] mt-[20px] max-w-[370px] xl:max-w-[430px] h-[96px]">The tech ecosystem is a fast-moving network of innovators, companies, and tools that drive global progress through constant evolution and collaboration.</p>
+                                <div class="w-[147px] h-[38px] inline-flex items-center gap-[10px] px-[24px] py-[10px] rounded-[4px] border border-[#62BA1B] bg-[#3F8E00] shadow-[0_8px_30px_0_rgba(63,142,0,0.30)] mt-[20px] hover:scale-[1.1] transition duration-[500ms]"><input class="text-white font-['IBM_Plex_Mono'] text-[14px] font-bold leading-none" type="button" value="Read about"><img src="static\media\images\vector.png" class=""></div>
+                            </div>
+                    </div>
+                    
+            </div>
+
         </div>
-
-    </div>
-    <!--Articles-->
-    <div class="deskArt hidden bg-[#ffffff]          lg:relative lg:flex lg:flex-col lg:items-center lg:pt-[80px] lg:mb-[70px] ">
-        <div class="flex flex-col items-center w-[570px]">
-            <p class="text-[#080808] text-center raleway text-[34px] font-extrabold leading-none">My articles</p>
-            <p class="text-[#484848] text-center ibm text-[14px] font-normal leading-[24px] tracking-[0.14px] mt-[20px]">Here you can find some articles I’ve written about tech, AI, and digital culture. I like sharing what I learn, explaining complex topics in a simple way, and reflecting on how technology shapes our lives. Writing helps me think deeper and stay curious.</p>
-        </div>
-
-        <div class="articles grid grid-cols-2 gap-[45px] lg:gap-[65px] mt-[44px] px-[100px] xl:px-[180px]">
-                   <div class="flex flex-col ">
-                        <div class=""><img src="static\media\images\artDesk1.png" class=""></div>
-                        <div class="flex flex-col justify-start mt-[40px]">
-                            <p class="text-[#080808] raleway text-[24px] font-black leading-none">Bridging Generations and Tech...how?</p>
-                            <p class="text-[#484848] ibm text-[14px] font-normal leading-[24px] tracking-[0.14px] mt-[20px] max-w-[370px] xl:max-w-[430px]">Technology is shaping how generations connect, learn, and share—blending tradition with innovation. But, how does it affect each of us?</p>
-                            <div class="w-[147px] h-[38px] inline-flex items-center gap-[10px] px-[24px] py-[10px] rounded-[4px] border border-[#62BA1B] bg-[#3F8E00] shadow-[0_8px_30px_0_rgba(63,142,0,0.30)] mt-[20px]"><input class="text-white font-['IBM_Plex_Mono'] text-[14px] font-bold leading-none" type="button" value="Read about"><img src="static\media\images\vector.png" class=""></div>
+        <!--Contacts-->
+        <div id="cont" class="hidden lg:flex  pt-[52px] bg-[#080808] flex flex-col items-center z-0 pb-[80px]">
+                    <div class="contMe raleway text-white text-[28px] font-black">Contact me</div>
+                    <p class="text-[#9c9c9c] text-center ibm text-[14px] font-normal leading-[24px] tracking-[0.14px] mt-[20px] w-[570px]">If you’d like to connect, ask questions, or talk about a project, feel free to reach out! I’m always open to new ideas, feedback, or just a friendly chat.</p>
+                    <form id="formContacts" class="inputSet mt-[36px] w-[350px] flex flex-col items-center">
+                        <div class="inputItem">
+                            <p class="ibm">Email</p>
+                            <input
+                                class="h-[40px] w-[350px] px-[12px] mt-[5px] rounded-[4px] bg-[#F8F8F8] border border-[#D8D8D8] text-[#757575] font-normal ibm text-[10px] leading-[21px]"
+                                type="email"
+                                placeholder="Please enter your email"
+                            required/>
                         </div>
-                   </div>
-
-
-                   <div class="flex flex-col ">
-                        <div class=""><img src="static\media\images\artDesk2.png" class=""></div>
-                        <div class="flex flex-col justify-start mt-[40px]">
-                            <p class="text-[#080808] raleway text-[22px] font-black leading-none">The Core of innovation: Tech Ecosystems</p>
-                            <p class="text-[#484848] ibm text-[14px] font-normal leading-[24px] tracking-[0.14px] mt-[20px] max-w-[370px] xl:max-w-[430px]">Technology is shaping how generations connect, learn, and share—blending tradition with innovation. But, how does it affect each of us?</p>
-                            <div class="w-[147px] h-[38px] inline-flex items-center gap-[10px] px-[24px] py-[10px] rounded-[4px] border border-[#62BA1B] bg-[#3F8E00] shadow-[0_8px_30px_0_rgba(63,142,0,0.30)] mt-[20px]"><input class="text-white font-['IBM_Plex_Mono'] text-[14px] font-bold leading-none" type="button" value="Read about"><img src="static\media\images\vector.png" class=""></div>
+                        <div class="inputItem mt-[18px]">
+                            <p class="ibm">Mobile</p>
+                            <input class="h-[40px] w-[350px] px-[12px] mt-[5px] rounded-[4px] bg-[#F8F8F8] border border-[#D8D8D8] text-[#757575] font-normal text-[10px] leading-[21px] ibm" type="tel" placeholder="Enter mobile (optional)">
                         </div>
-                   </div>
-                   
+                        <div class="inputItem mt-[18px]">
+                            <p class="ibm">Message</p>
+                            <input class="px-[12px] h-[140px] w-[350px] mt-[5px] rounded-[4px] bg-[#F8F8F8] border border-[#D8D8D8] h-[92px] text-[#757575] ibm text-[10px] font-normal leading-[21px]" type="text" placeholder="Enter your message" required>
+                        </div>
+
+                        <input id="message" class="hover:scale-[1.05] transition duration-[500ms] flex w-[350px] h-[50px] mt-[24px] justify-center items-center rounded-[4px] border border-[#62BA1B] bg-[#3F8E00] shadow-[0_8px_30px_rgba(63,142,0,0.5)] text-white text-[14px] font-extrabold ibm" type="submit" value="Submit">
+                    </form>
         </div>
-
+        <!--Footer-->
+        <div class="hidden h-[76px] bg-[#1B1B1B]          lg:flex lg:justify-center lg:items-end">
+            <p class="mb-[16px] text-[#9C9C9C] text-center text-[14px] font-normal leading-[12px] tracking-[0.08px] ibm">Francesco Scanni - Last update 08/2025</p>
+        </div>
     </div>
-    <!--Contacts-->
-    <div class="hidden lg:flex  pt-[52px] bg-[#080808] flex flex-col items-center z-0 pb-[80px]">
-                <div class="contMe raleway text-white text-[28px] font-black">Contact me</div>
-                <p class="text-[#9c9c9c] text-center ibm text-[14px] font-normal leading-[24px] tracking-[0.14px] mt-[20px] w-[570px]">If you’d like to connect, ask questions, or talk about a project, feel free to reach out! I’m always open to new ideas, feedback, or just a friendly chat.</p>
-                <form class="inputSet mt-[36px] w-[350px] flex flex-col items-center">
-                    <div class="inputItem">
-                        <p class="ibm">Email</p>
-                        <input
-                            class="h-[40px] w-[350px] px-[12px] mt-[5px] rounded-[4px] bg-[#F8F8F8] border border-[#D8D8D8] text-[#757575] font-normal ibm text-[10px] leading-[21px]"
-                            type="email"
-                            placeholder="Please enter your email"
-                        />
-                    </div>
-                    <div class="inputItem mt-[18px]">
-                        <p class="ibm">Mobile</p>
-                        <input class="h-[40px] w-[350px] px-[12px] mt-[5px] rounded-[4px] bg-[#F8F8F8] border border-[#D8D8D8] text-[#757575] font-normal text-[10px] leading-[21px] ibm" type="tel" placeholder="Enter mobile">
-                    </div>
-                    <div class="inputItem mt-[18px]">
-                        <p class="ibm">Message</p>
-                        <input class="px-[12px] h-[140px] w-[350px] mt-[5px] rounded-[4px] bg-[#F8F8F8] border border-[#D8D8D8] h-[92px] text-[#757575] ibm text-[10px] font-normal leading-[21px]" type="text" placeholder="Enter your message">
-                    </div>
-
-                    <input class="flex w-[350px] h-[50px] mt-[24px] justify-center items-center rounded-[4px] border border-[#62BA1B] bg-[#3F8E00] shadow-[0_8px_30px_rgba(63,142,0,0.5)] text-white text-[14px] font-extrabold ibm" type="submit" value="Submit">
-                </form>
-    </div>
-    <!--Footer-->
-    <div class="hidden h-[76px] bg-[#1B1B1B]          lg:flex lg:justify-center lg:items-end">
-        <p class="mb-[16px] text-[#9C9C9C] text-center text-[14px] font-normal leading-[12px] tracking-[0.08px] ibm">Francesco Scanni - Last update 08/2025</p>
-    </div>
-
     
-
-
-    
-
-
-
-
 
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script src="./static/js/menuToggle.js"></script>
     <script src="./static/js/toggleFeature.js"></script>
     <script src="./static/js/articleOverlayer.js"></script>
+    <script src="./static/js/redirectFeatures.js"></script>
+    <script src="./static/js/contactMessage.js"></script>
+    <script src="./static/js/scrollFunction.js"></script>
 </body>
 </html>
