@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <title>Francesco Scanni - Portfolio</title>
+</head>
+<body class="scroll-smooth bg-white text-black antialiased">
+
+    <div id="popup" class="fixed top-8 left-1/2 -translate-x-1/2 bg-gradient-to-r from-green-500 to-transparent text-white text-[18px] px-8 py-4 font-bold opacity-0 pointer-events-none transition-opacity duration-500 z-50 flex items-center gap-2 shadow-lg rounded-md">
+        <img src="https://img.icons8.com/ios-filled/24/ffffff/checkmark--v1.png" alt="check" class="w-5 h-5" />
+        <span>Successful</span>
+    </div>
+
+    <div class="hover:scale-[1.1] transition duration-[500ms] fixed bottom-6 right-6 lg:bottom-10 lg:right-10 w-[44px] h-[44px] bg-[#D9D9D9] rounded-full flex justify-center items-center z-50 homeSphere lg:w-[60px] lg:h-[60px] shadow-lg">
+        <a href="#"><img class="w-[28px] h-[28px] active:scale-[1.2] transition-transform duration-300" src="static\media\images\Home.png" alt="home"></a>
+    </div>
+
+    <div data-include="components/header.html" class="header w-full h-[70px] bg-[#1B1B1B] flex justify-between items-center px-6 z-40 lg:fixed lg:top-0 lg:left-1/2 lg:-translate-x-1/2 lg:w-[86%] lg:max-w-7xl lg:rounded-b-[8px] lg:px-12">
+        <!--HEADER-->
+    </div>
+
+    <div data-include="components/hero1.html" class="min-h-screen bg-[#080808] flex flex-col justify-center py-20 lg:py-0 lg:pt-[10vh]">
+        <!--PRESENTAZONE-->
+    </div>
+
+    
+
+    <div class="w-full bg-white lg:hidden pb-16 px-6 flex flex-col gap-12">
+        <div id="features" class="explore raleway w-full text-[#080808] text-[32px] font-black pt-[40px] pb-[10px] flex justify-center border-b">Explore.</div>
+        <div class="features w-full flex flex-col gap-8">
+
+            <div data-include="components/projects/myproj.html" class="info w-full max-w-md mx-auto">
+                
+            </div>
+
+            <div class="info w-full max-w-md mx-auto">
+                <div class="flex items-center justify-between border-b pb-2 cursor-pointer">
+                    <div class="featSet raleway text-[20px] font-black flex items-center">Articles <img src="static\media\images\Pencil.png" class="ml-[8px] w-[24px] h-[24px]" alt="Pencil"></div>
+                    <img src="static\media\images\vector1.png" class="vector w-4 h-4" id="vec2" alt="arrow">
+                </div>
+                
+                <div class="contentArt w-full pt-4">
+                    <p class="descArt w-full text-[#484848] text-[12px] font-normal ibm leading-relaxed mb-6">Here are some articles I’ve written on tech, AI, and digital culture. I enjoy sharing what I learn, making complex ideas simple, and reflecting on how technology shapes our lives.</p>
+                    
+                    <div class="artSet grid grid-cols-2 gap-4 relative pb-16">
+                        <div class="article bg-gray-50 rounded-xl overflow-hidden shadow-sm">
+                            <div class="artBox">
+                                <img src="static\media\images\artMobile1.png" class="w-full h-32 object-cover" alt="Art1">
+                                <div class="p-3">
+                                    <p class="artTitle text-[#080808] text-[11px] raleway font-black leading-snug">Bridging Generations and Tech...how?</p>
+                                    <p class="sign text-[#666666] text-[8px] raleway font-semibold mt-1">Francesco Scanni - ?/25</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article bg-gray-50 rounded-xl overflow-hidden shadow-sm">
+                            <div class="artBox">
+                                <img src="static\media\images\artMobile2.png" class="w-full h-32 object-cover" alt="Art2">
+                                <div class="p-3">
+                                    <p class="artTitle text-[#080808] text-[11px] font-black raleway leading-snug">The Core of innovation: Tech Ecosystems</p>
+                                    <p class="sign text-[#666666] text-[8px] raleway font-semibold mt-1">Francesco Scanni - ?/25</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="article lastArt bg-gray-50 rounded-xl overflow-hidden shadow-sm">
+                            <div class="artBox">
+                                <img src="static\media\images\artMobile1.png" class="w-full h-32 object-cover" alt="Art3">
+                                <div class="p-3">
+                                    <p class="artTitle text-[#080808] text-[11px] font-black raleway leading-snug">Bridging Generations and Tech...how?</p>
+                                    <p class="sign text-[#666666] text-[8px] font-semibold raleway mt-1">Francesco Scanni - ?/25</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article lastArt bg-gray-50 rounded-xl overflow-hidden shadow-sm">
+                            <div class="artBox">
+                                <img src="static\media\images\artMobile2.png" class="w-full h-32 object-cover" alt="Art4">
+                                <div class="p-3">
+                                    <p class="artTitle text-[#080808] text-[11px] font-black raleway leading-snug">The Core of innovation: Tech Ecosystems</p>
+                                    <p class="sign text-[#666666] text-[8px] raleway font-semibold mt-1">Francesco Scanni - ?/25</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="overlay absolute inset-x-0 bottom-0 h-[70%] bg-gradient-to-t from-white via-white/95 to-transparent flex flex-col justify-end items-center pb-4">
+                            <button class="seeMore h-[36px] px-5 rounded-full bg-white shadow-md flex justify-center items-center text-[#080808] text-[12px] raleway font-bold hover:scale-105 transition-transform duration-200">
+                                See more <img src="static/media/images/vector2.png" class="h-2.5 ml-2" alt="arrow">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info index-1 w-full max-w-md mx-auto">
+                <div class="flex items-center justify-between border-b pb-2 cursor-pointer">
+                    <div class="featSet raleway font-black text-[20px] flex items-center">Feedback <img src="static\media\images\Contacts.png" class="ml-[8px] w-[24px] h-[24px]" alt="Contact"></div>
+                    <img src="static\media\images\vector1.png" class="vector w-4 h-4" id="vec3" alt="arrow">
+                </div>
+
+                <div class="contentFeed w-full flex justify-center items-center py-6">
+                    <p class="w-full text-[#484848] text-[13px] font-bold raleway text-center">This section is empty for now</p>
+                </div>
+            </div>
+
+            <div class="w-full py-10 bg-[#080808] flex flex-col items-center rounded-2xl shadow-xl px-6 mt-4">
+                <div class="contMe raleway text-white text-[28px] font-black mb-6">Contact me</div>
+                <form id="formContacts" class="inputSet w-full max-w-[280px] flex flex-col gap-4">
+                    <div class="inputItem w-full">
+                        <p class="ibm text-white text-sm font-semibold mb-1">Email</p>
+                        <input class="w-full h-[40px] px-3 rounded bg-[#F8F8F8] border border-transparent focus:border-[#62BA1B] text-[#333] font-normal ibm text-[13px] outline-none transition-colors" type="email" placeholder="Please enter your email" required/>
+                    </div>
+                    <div class="inputItem w-full">
+                        <p class="ibm text-white text-sm font-semibold mb-1">Mobile</p>
+                        <input class="w-full h-[40px] px-3 rounded bg-[#F8F8F8] border border-transparent focus:border-[#62BA1B] text-[#333] font-normal ibm text-[13px] outline-none transition-colors" type="tel" placeholder="Enter mobile (optional)">
+                    </div>
+                    <div class="inputItem w-full">
+                        <p class="ibm text-white text-sm font-semibold mb-1">Message</p>
+                        <textarea class="w-full h-[100px] px-3 py-2 rounded bg-[#F8F8F8] border border-transparent focus:border-[#62BA1B] text-[#333] font-normal ibm text-[13px] outline-none resize-none transition-colors" placeholder="Enter your message" required></textarea>
+                    </div>
+
+                    <input class="w-full h-[46px] mt-4 rounded border border-[#62BA1B] bg-[#3F8E00] shadow-[0_8px_30px_rgba(63,142,0,0.5)] text-white text-[15px] font-extrabold ibm active:scale-95 transition-transform cursor-pointer" type="submit" value="Submit">
+                </form>
+            </div>
+
+            <div class="w-full py-6 bg-[#1B1B1B] rounded-xl mt-4">
+                <p class="text-[#9C9C9C] text-center text-[11px] font-normal leading-relaxed tracking-wider ibm">Francesco Scanni<br> Last update 08/2025</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w-full bg-white hidden lg:block">
+        
+        <div id="proj" class="deskProj hidden lg:flex lg:flex-col lg:items-center lg:py-24 lg:max-w-7xl lg:mx-auto lg:px-12 xl:px-20">
+            <div class="flex flex-col items-center w-full max-w-2xl text-center mb-16">
+                <p class="text-[#080808] font-raleway text-[40px] font-black leading-none">My projects</p>
+                <p class="text-[#484848] ibm text-[16px] font-normal leading-relaxed tracking-wide mt-5">These are some projects I’ve built during school and in my free time. I love turning ideas into code, learning new tools, and solving real problems. Each project shows a bit of my passion and progress.</p>
+            </div>
+            
+            <div class="w-full flex flex-col gap-24 pb-12">
+                <div class="project1 flex items-center justify-between w-full gap-12">
+                    <div class="text w-1/2">
+                        <div class="inline-flex px-3.5 py-1 items-center rounded-full bg-[#FFF6E9] mb-4"><p class="text-[#FFA217] ibm text-[12px] font-bold uppercase tracking-wider">Analysis</p></div>
+                        <p class="text-[#080808] raleway text-[26px] xl:text-[30px] font-black leading-tight mb-4">Job related AI Bias - ImGen</p>
+                        <p class="text-[#666666] ibm text-[15px] font-normal leading-relaxed mb-6">I built a website to show how image-generating AIs can reflect bias. I tested different prompts and compared results, noticing patterns in gender, race, and stereotypes. The site includes examples and short reflections on what I found.</p>
+                        <div id="jobAI" class="hover:scale-105 transition-transform duration-300 cursor-pointer inline-flex items-center gap-2.5 px-6 py-3 rounded bg-[#FFA217] shadow-[0_8px_30px_rgba(255,162,23,0.25)]"><input class="text-white ibm text-[15px] font-bold cursor-pointer bg-transparent outline-none" type="button" value="Visit site"><img src="static\media\images\vector.png" class="w-3.5 h-auto" alt="arrow"></div>
+                    </div>
+                    <div class="w-1/2 flex justify-end">
+                        <img src="static\media\images\projDesk1.png" class="w-full max-w-md xl:max-w-xl object-contain shadow-xl rounded-2xl" alt="Project 1">
+                    </div>
+                </div>
+
+                <div class="project2 flex flex-row-reverse items-center justify-between w-full gap-12">
+                    <div class="text w-1/2">
+                        <div class="inline-flex px-3.5 py-1 items-center rounded-full bg-[#D0E6FF] mb-4"><p class="text-[#000AFF] ibm text-[12px] font-bold uppercase tracking-wider">Education</p></div>
+                        <p class="text-[#080808] raleway text-[26px] xl:text-[30px] font-black leading-tight mb-4">Linear Regression - AI & ML</p>
+                        <p class="text-[#666666] ibm text-[15px] font-normal leading-relaxed mb-6">I followed a guided project to learn linear regression with Python and scikit-learn, aiming to predict a child’s height based on the parent’s height. I learned how to prepare data, train a model, and check its accuracy. </p>
+                        <a class="inline-block" href="static\media\docs\linear_regressionML.ipynb" download><div class="hover:scale-105 transition-transform duration-300 inline-flex items-center gap-2.5 px-6 py-3 rounded bg-[#000AFF] shadow-[0_8px_30px_rgba(0,10,255,0.25)]"><input id="pyML" class="text-white ibm text-[15px] font-bold cursor-pointer bg-transparent outline-none" type="button" value="View documentation"><img src="static\media\images\vector.png" class="w-3.5 h-auto" alt="arrow"></div></a>
+                    </div>
+                    <div class="w-1/2 flex justify-start">
+                        <img src="static\media\images\projDesk2.png" class="w-full max-w-md xl:max-w-xl object-contain shadow-xl rounded-2xl" alt="Project 2">
+                    </div>
+                </div>
+
+                <div class="project3 flex items-center justify-between w-full gap-12">
+                    <div class="text w-1/2">
+                        <div class="inline-flex px-3.5 py-1 items-center rounded-full bg-[#E0FFF8] mb-4"><p class="text-[#2AB090] ibm text-[12px] font-bold uppercase tracking-wider">Entertainment</p></div>
+                        <p class="text-[#080808] raleway text-[26px] xl:text-[30px] font-black leading-tight mb-4">Whack a Mole - PC Game</p>
+                        <p class="text-[#666666] ibm text-[15px] font-normal leading-relaxed mb-6">I made a Whack-a-Mole game using HTML, CSS, and JavaScript. It was a fun way to learn how to handle clicks and use timers. The game is simple, fast, and enjoyable. Hopefully, it’ll receive some updates soon!</p>
+                        <div id="wam" class="hover:scale-105 transition-transform duration-300 cursor-pointer inline-flex items-center gap-2.5 px-6 py-3 rounded bg-[#2AB090] shadow-[0_8px_30px_rgba(42,176,144,0.25)]"><input class="text-white ibm text-[15px] font-bold cursor-pointer bg-transparent outline-none" type="button" value="Play now"><img src="static\media\images\vector.png" class="w-3.5 h-auto" alt="arrow"></div>
+                    </div>
+                    <div class="w-1/2 flex justify-end">
+                        <img src="static\media\images\projDesk3.png" class="w-full max-w-md xl:max-w-xl object-contain shadow-xl rounded-2xl" alt="Project 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="deskFeedB hidden bg-[#080808] lg:flex lg:flex-col lg:items-center lg:py-24 lg:px-12">
+            <div class="flex flex-col items-center w-full max-w-2xl text-center mb-12">
+                <p class="text-white raleway text-[40px] font-black leading-none">Testimonials</p>
+                <p class="text-[#9C9C9C] ibm text-[16px] font-normal leading-relaxed tracking-wide mt-5">Here are some short messages from teachers, classmates, and collaborators who have worked with me. Their feedback means a lot and reflects how I try to bring passion, focus, and teamwork into everything I do.</p>
+            </div>
+            
+            <div class="text-white text-[22px] mt-12 flex flex-col items-center raleway font-bold">This section is empty for now.
+                <img class="w-24 h-24 mt-6 opacity-60" src="static\media\images\noContent.png" alt="Empty">
+            </div>
+        </div>
+
+        <div id="art" class="deskArt hidden bg-[#ffffff] lg:flex lg:flex-col lg:items-center lg:py-24 lg:max-w-7xl lg:mx-auto lg:px-12 xl:px-20">
+            <div class="flex flex-col items-center w-full max-w-2xl text-center mb-16">
+                <p class="text-[#080808] raleway text-[40px] font-black leading-none">My articles</p>
+                <p class="text-[#484848] ibm text-[16px] font-normal leading-relaxed tracking-wide mt-5">Here you can find some articles I’ve written about tech, AI, and digital culture. I like sharing what I learn, explaining complex topics in a simple way, and reflecting on how technology shapes our lives. Writing helps me think deeper and stay curious.</p>
+            </div>
+
+            <div class="articles grid grid-cols-2 gap-12 xl:gap-20 w-full">
+                <div class="flex flex-col group">
+                    <div class="overflow-hidden rounded-2xl shadow-md"><img src="static\media\images\artDesk1.png" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500" alt="Article 1"></div>
+                    <div class="flex flex-col justify-start mt-6">
+                        <p class="text-[#080808] raleway text-[26px] font-black leading-tight">Bridging Generations and Tech...how?</p>
+                        <p class="text-[#484848] ibm text-[15px] font-normal leading-relaxed mt-4 max-w-md min-h-[72px]">Technology is shaping how generations connect, learn, and share—blending tradition with innovation. But, how does it affect each of us?</p>
+                        <div class="w-max mt-6 hover:scale-105 transition-transform duration-300 inline-flex items-center gap-2.5 px-6 py-3 rounded border border-[#62BA1B] bg-[#3F8E00] shadow-[0_8px_30px_0_rgba(63,142,0,0.25)] cursor-pointer"><input class="text-white font-['IBM_Plex_Mono'] text-[15px] font-bold cursor-pointer bg-transparent outline-none" type="button" value="Read about"><img src="static\media\images\vector.png" class="w-3.5 h-auto" alt="arrow"></div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col group">
+                    <div class="overflow-hidden rounded-2xl shadow-md"><img src="static\media\images\artDesk2.png" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500" alt="Article 2"></div>
+                    <div class="flex flex-col justify-start mt-6">
+                        <p class="text-[#080808] raleway text-[26px] font-black leading-tight">The Core of innovation: Tech Ecosystems</p>
+                        <p class="text-[#484848] ibm text-[15px] font-normal leading-relaxed mt-4 max-w-md min-h-[72px]">The tech ecosystem is a fast-moving network of innovators, companies, and tools that drive global progress through constant evolution and collaboration.</p>
+                        <div class="w-max mt-6 hover:scale-105 transition-transform duration-300 inline-flex items-center gap-2.5 px-6 py-3 rounded border border-[#62BA1B] bg-[#3F8E00] shadow-[0_8px_30px_0_rgba(63,142,0,0.25)] cursor-pointer"><input class="text-white font-['IBM_Plex_Mono'] text-[15px] font-bold cursor-pointer bg-transparent outline-none" type="button" value="Read about"><img src="static\media\images\vector.png" class="w-3.5 h-auto" alt="arrow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="cont" class="hidden lg:flex pt-24 bg-[#080808] flex flex-col items-center z-0 pb-24 px-12">
+            <div class="contMe raleway text-white text-[40px] font-black mb-4">Contact me</div>
+            <p class="text-[#9c9c9c] text-center ibm text-[16px] font-normal leading-relaxed tracking-wide max-w-2xl mb-12">If you’d like to connect, ask questions, or talk about a project, feel free to reach out! I’m always open to new ideas, feedback, or just a friendly chat.</p>
+            
+            <form id="formContacts" class="inputSet w-full max-w-md flex flex-col gap-6 bg-[#111111] p-8 rounded-2xl shadow-2xl">
+                <div class="inputItem w-full">
+                    <p class="ibm text-white font-semibold mb-2">Email</p>
+                    <input class="w-full h-[44px] px-4 rounded bg-[#F8F8F8] border border-transparent focus:border-[#62BA1B] text-[#333] font-normal ibm text-[14px] outline-none transition-colors" type="email" placeholder="Please enter your email" required/>
+                </div>
+                <div class="inputItem w-full">
+                    <p class="ibm text-white font-semibold mb-2">Mobile</p>
+                    <input class="w-full h-[44px] px-4 rounded bg-[#F8F8F8] border border-transparent focus:border-[#62BA1B] text-[#333] font-normal ibm text-[14px] outline-none transition-colors" type="tel" placeholder="Enter mobile (optional)">
+                </div>
+                <div class="inputItem w-full">
+                    <p class="ibm text-white font-semibold mb-2">Message</p>
+                    <textarea class="w-full h-[140px] px-4 py-3 rounded bg-[#F8F8F8] border border-transparent focus:border-[#62BA1B] text-[#333] font-normal ibm text-[14px] outline-none resize-none transition-colors" placeholder="Enter your message" required></textarea>
+                </div>
+
+                <input id="message" class="hover:scale-105 transition-transform duration-300 w-full h-[50px] mt-2 rounded border border-[#62BA1B] bg-[#3F8E00] shadow-[0_8px_30px_rgba(63,142,0,0.5)] text-white text-[16px] font-extrabold ibm cursor-pointer" type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="hidden h-[80px] bg-[#1B1B1B] lg:flex lg:justify-center lg:items-center">
+            <p class="text-[#9C9C9C] text-center text-[14px] font-normal tracking-wider ibm">Francesco Scanni - Last update 08/2025</p>
+        </div>
+    </div>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--<script src="./static/js/menuToggle.js"></script>-->
+    <script src="./static/js/toggleFeature.js"></script>
+    <script src="./static/js/articleOverlayer.js"></script>
+    <script src="./static/js/redirectFeatures.js"></script>
+    <script src="./static/js/contactMessage.js"></script>
+    <script src="./static/js/scrollFunction.js"></script>
+    <script src="component_loader.js"></script>
+</body>
+</html>
