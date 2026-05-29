@@ -34,7 +34,7 @@
                 <!--PROGETTI-->
             </div>
 
-            <div data-include="components/mobile/particles.html" class="info w-full max-w-md mx-auto">
+            <div data-include="components/mobile/articles.html" class="info w-full max-w-md mx-auto">
                 <!--ARTICOLI-->
             </div>
 
@@ -55,36 +55,33 @@
 
     <!--Desktop-->
     <div class="w-full bg-white hidden lg:block">
-        <div data-include="components/desktop/proj.html" class="deskProj hidden lg:flex lg:flex-col lg:items-center lg:py-24 lg:max-w-7xl lg:mx-auto lg:px-12 xl:px-20">
-            <!--PROGETTI-->
+        <div data-include="components/content.html" class="w-full flex flex-col items-center py-20 px-6">
+            <!--CONTENUTO-->
         </div>
+        
+        
 
-        <div data-include="components/desktop/feedback.html" class="deskFeedB hidden bg-[#080808] lg:flex lg:flex-col lg:items-center lg:py-24 lg:px-12">
-            <!--FEEDBACK-->
-        </div>
-
-        <div data-include="components/desktop/articles.html" id="art" class="deskArt hidden bg-[#ffffff] lg:flex lg:flex-col lg:items-center lg:py-24 lg:max-w-7xl lg:mx-auto lg:px-12 xl:px-20">
-            <!--ARTICOLI-->
-        </div>
-
-        <div data-include="components/desktop/contacts.html" id="cont" class="hidden lg:flex pt-24 bg-[#080808] flex flex-col items-center z-0 pb-24 px-12">
-            <!--CONTATTI-->
-        </div>
-
-        <div class="hidden h-[80px] bg-[#1B1B1B] lg:flex lg:justify-center lg:items-center">
+        <footer class="w-full bg-[#1B1B1B] border-t border-[#222222] py-6 lg:py-8 flex flex-col justify-center items-center gap-1 z-10">
             <!--FOOTER-->
-            <p class="text-[#9C9C9C] text-center text-[14px] font-normal tracking-wider ibm">Francesco Scanni - Last update 08/2025</p>
-        </div>
+            <p class="text-[#9C9C9C] text-center text-[13px] lg:text-[14px] font-normal tracking-wider ibm transition-colors duration-300 hover:text-white cursor-default">
+                © Francesco Scanni
+            </p>
+            <p class="text-[#666666] text-center text-[10px] lg:text-[12px] font-normal tracking-wider ibm">
+                Last update 08/2025
+            </p>
+        </footer>
     </div>
     <!------------------------------------------->
     
     <script src="https://cdn.tailwindcss.com"></script>
     <!--<script src="./static/js/menuToggle.js"></script>-->
-    <script src="./static/js/toggleFeature.js"></script>
-    <script src="./static/js/articleOverlayer.js"></script>
-    <script src="./static/js/redirectFeatures.js"></script>
-    <script src="./static/js/contactMessage.js"></script>
-    <script src="./static/js/scrollFunction.js"></script>
+    <!--<script src="./static/js/toggleFeature.js"></script>-->
+    <!--<script src="./static/js/articleOverlayer.js"></script>-->
+    <!--<script src="./static/js/redirectFeatures.js"></script>-->
+    <!--<script src="./static/js/contactMessage.js"></script>-->
+    <!--<script src="./static/js/scrollFunction.js"></script>-->
     <script src="component_loader.js"></script>
+    <script src="static/js/cards.js" defer></script>
+    <script src="static/js/terminal.js" defer></script>
 </body>
 </html>
