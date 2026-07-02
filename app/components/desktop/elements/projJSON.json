@@ -1,0 +1,40 @@
+{
+  "progetti": [
+    {
+      "id": 1,
+      "titolo": "Sky Go",
+      "categoria": "Web App / PHP",
+      "tag_colore": "blue",
+      "descrizione": "Un simulatore per la prenotazione di voli sviluppato in PHP e MySQL, containerizzato con Docker. Il sistema integra avanzate funzionalità di ricerca e il filtraggio dinamico degli aeroporti.",
+      "immagine_url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1000",
+      "immagine_alt": "Sky Go App",
+      "progetto_url": "https://skygo.kesug.com",
+      "repo_url": "https://github.com/FrancescoScanni/Sky-Go.git",
+      "layout_invertito": false
+    },
+    {
+      "id": 2,
+      "titolo": "Orme nel silenzio",
+      "categoria": "Documentario",
+      "tag_colore": "emerald",
+      "descrizione": "Progetto di ricerca storica, mostra e produzione documentaristica audiovisiva per la conservazione della memoria della Shoah, presentato in un evento dedicato.",
+      "immagine_url": "https://images.unsplash.com/photo-1440407876336-62333a6f010f?auto=format&fit=crop&q=80&w=1000",
+      "immagine_alt": "Orme nel silenzio",
+      "progetto_url": "#",
+      "repo_url": "https://github.com/FrancescoScanni/Sky-Go.git",
+      "layout_invertito": true
+    },
+    {
+      "id": 3,
+      "titolo": "Mobile Photography",
+      "categoria": "Fotografia",
+      "tag_colore": "purple",
+      "descrizione": "Collezione di scatti urbani e reportage realizzati interamente tramite dispositivi mobile. Focus sull'autenticità visiva e sulla composizione istantanea.",
+      "immagine_url": "https://images.unsplash.com/photo-1516961642265-531546e84af2?auto=format&fit=crop&q=80&w=1000",
+      "immagine_alt": "Mobile Photography",
+      "progetto_url": "#",
+      "repo_url": "https://github.com/FrancescoScanni/Sky-Go.git",
+      "layout_invertito": false
+    }
+  ]
+}

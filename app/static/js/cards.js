@@ -2,12 +2,8 @@
 
 document.addEventListener("HTMLComponentsLoaded", () => {
 
-    const cards = [
-        { id: "card-progetti",  file: "components/overlayers/projs.html" },
-        { id: "card-fls",       file: "components/overlayers/terminal.html" },
-        { id: "card-articoli",  file: "components/overlayers/articles.html" },
-
-    ];
+    const terminalCardId = "card-fls";
+    const terminalFile = "components/overlayers/terminal.html";
 
     // Crea l'overlay container una volta sola nel DOM
     const overlay = document.createElement("div");
@@ -22,24 +18,24 @@ document.addEventListener("HTMLComponentsLoaded", () => {
         </button>
         <div id="overlay-content"></div>
     </div>
-`;
+    `;
     document.body.appendChild(overlay);
 
     const overlayBox = document.getElementById("overlay-box");
     const overlayContent = document.getElementById("overlay-content");
     const overlayClose = document.getElementById("overlay-close");
 
-    // Apri overlay
-    function openOverlay(file) {
+    // Apri overlay (ora specifico per il terminale)
+    function openOverlay() {
         overlayContent.innerHTML = `<p class="text-[#484848] ibm text-[15px]">Caricamento...</p>`;
         
         overlay.classList.remove("opacity-0", "pointer-events-none");
         overlayBox.classList.remove("scale-95");
         document.body.style.overflow = "hidden";
 
-        fetch(file)
+        fetch(terminalFile)
             .then(res => {
-                if (!res.ok) throw new Error(file);
+                if (!res.ok) throw new Error(terminalFile);
                 return res.text();
             })
             .then(html => { overlayContent.innerHTML = html; })
@@ -53,11 +49,11 @@ document.addEventListener("HTMLComponentsLoaded", () => {
         document.body.style.overflow = "";
     }
 
-    // Click su ogni card
-    cards.forEach(({ id, file }) => {
-        const card = document.getElementById(id);
-        if (card) card.addEventListener("click", () => openOverlay(file));
-    });
+    // Click sulla card specifica del terminale
+    const terminalCard = document.getElementById(terminalCardId);
+    if (terminalCard) {
+        terminalCard.addEventListener("click", openOverlay);
+    }
 
     // Chiudi con pulsante X
     overlayClose.addEventListener("click", closeOverlay);
