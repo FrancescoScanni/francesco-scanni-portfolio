@@ -2,38 +2,79 @@
   "progetti": [
     {
       "id": 1,
+      "titolo": "KVault",
+      "categoria": "Web App / FinTech",
+      "tag_colore": "emerald",
+      "descrizione": "Digital personal finance tracker per il monitoraggio di entrate e uscite. Supporta la gestione di portafogli virtuali e l'impostazione di soglie critiche di budget con alert dinamici.",
+      "immagine_url": "elements/banners/kvault.png",
+      "progetto_url": "https://kvault.kesug.com",
+      "repo_url": "https://github.com/FrancescoScanni/KVault.git",
+      "layout_invertito": false
+    },
+    {
+      "id": 2,
       "titolo": "Sky Go",
       "categoria": "Web App / PHP",
       "tag_colore": "blue",
       "descrizione": "Un simulatore per la prenotazione di voli sviluppato in PHP e MySQL, containerizzato con Docker. Il sistema integra avanzate funzionalità di ricerca e il filtraggio dinamico degli aeroporti.",
       "immagine_url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1000",
-      "immagine_alt": "Sky Go App",
       "progetto_url": "https://skygo.kesug.com",
-      "repo_url": "https://github.com/FrancescoScanni/Sky-Go.git",
-      "layout_invertito": false
-    },
-    {
-      "id": 2,
-      "titolo": "Orme nel silenzio",
-      "categoria": "Documentario",
-      "tag_colore": "emerald",
-      "descrizione": "Progetto di ricerca storica, mostra e produzione documentaristica audiovisiva per la conservazione della memoria della Shoah, presentato in un evento dedicato.",
-      "immagine_url": "https://images.unsplash.com/photo-1440407876336-62333a6f010f?auto=format&fit=crop&q=80&w=1000",
-      "immagine_alt": "Orme nel silenzio",
-      "progetto_url": "#",
       "repo_url": "https://github.com/FrancescoScanni/Sky-Go.git",
       "layout_invertito": true
     },
     {
       "id": 3,
-      "titolo": "Mobile Photography",
-      "categoria": "Fotografia",
-      "tag_colore": "purple",
-      "descrizione": "Collezione di scatti urbani e reportage realizzati interamente tramite dispositivi mobile. Focus sull'autenticità visiva e sulla composizione istantanea.",
-      "immagine_url": "https://images.unsplash.com/photo-1516961642265-531546e84af2?auto=format&fit=crop&q=80&w=1000",
-      "immagine_alt": "Mobile Photography",
+      "titolo": "UDebate",
+      "categoria": "AI / Social Platforms",
+      "tag_colore": "violet",
+      "descrizione": "Piattaforma social AI-driven concepita per stimolare il dibattito costruttivo sui trend giornalieri, integrando sistemi avanzati di tracciamento dei feedback e analisi delle opinioni.",
+      "immagine_url": "elements/banners/udeb.png",
       "progetto_url": "#",
-      "repo_url": "https://github.com/FrancescoScanni/Sky-Go.git",
+      "repo_url": "https://github.com/FrancescoScanni/UDebate.git",
+      "layout_invertito": false
+    },
+    {
+      "id": 4,
+      "titolo": "EduLift",
+      "categoria": "AI / EdTech",
+      "tag_colore": "rose",
+      "descrizione": "Assistente didattico intelligente basato su IA, progettato per supportare l'apprendimento inclusivo di ragazzi con DSA (dislessia, discalculia e disgrafia) tramite percorsi e interfacce personalizzate.",
+      "immagine_url": "elements\\banners\\edu.png",
+      "progetto_url": "https://francescoscanni.github.io/EduLift/",
+      "repo_url": "https://github.com/FrancescoScanni/EduLift.git",
+      "layout_invertito": true
+    },
+    {
+      "id": 5,
+      "titolo": "CineScope",
+      "categoria": "Web App / PHP",
+      "tag_colore": "amber",
+      "descrizione": "Applicazione web full-stack in PHP dedicata alla critica cinematografica, dotata di un sistema nativo di voting, gestione delle recensioni e interazione dinamica con i contenuti.",
+      "immagine_url": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&q=80&w=1000",
+      "progetto_url": "https://cinescope.unaux.com/",
+      "repo_url": "https://github.com/FrancescoScanni/Film-Review-App.git",
+      "layout_invertito": false
+    },
+    {
+      "id": 6,
+      "titolo": "Cyber Hack Jump",
+      "categoria": "Game Dev / Desktop",
+      "tag_colore": "cyan",
+      "descrizione": "Arcade game desktop con controlli da tastiera ambientato in un ecosistema cyberpunk. Logica incentrata sulla sopravvivenza a minacce informatiche e ottimizzazione del punteggio in tempo reale.",
+      "immagine_url": "elements\\banners\\chj.png",
+      "progetto_url": "https://francescoscanni.github.io/Cyber-Hack-Jump/",
+      "repo_url": "https://github.com/FrancescoScanni/Cyber-Hack-Jump.git",
+      "layout_invertito": true
+    },
+    {
+      "id": 7,
+      "titolo": "Whack a Capibara",
+      "categoria": "Game Dev / Web",
+      "tag_colore": "orange",
+      "descrizione": "Rivisitazione interattiva e interamente responsive del classico 'Whack-a-Mole'. Sviluppato con un focus mirato sulla gestione degli eventi DOM e sulla fluidità delle animazioni cross-device.",
+      "immagine_url": "elements\\banners\\capi.png",
+      "progetto_url": "https://francescoscanni.github.io/Whack-a-Capibara/",
+      "repo_url": "https://github.com/FrancescoScanni/Whack-a-Capibara.git",
       "layout_invertito": false
     }
   ]

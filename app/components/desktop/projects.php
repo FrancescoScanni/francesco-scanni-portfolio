@@ -1,4 +1,5 @@
 <?php
+    include_once("elements/project.php");
     $json=file_get_contents("elements/projJSON.json");
     $projects = json_decode($json, true);
 ?>
@@ -13,25 +14,13 @@
 </head>
 <body class="bg-[#F8F9FA] antialiased font-sans text-gray-900">
 
-    <header data-include="../header.html" class="w-full py-6 px-6 md:px-12 flex justify-between items-center max-w-7xl mx-auto">
-    </header>
+    <?php echo $header; ?>
 
-    <section class="max-w-6xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-32">
-        <div class="max-w-3xl">
-            <span class="text-orange-600 bg-orange-100 font-bold text-xs px-4 py-1.5 rounded-full uppercase tracking-widest mb-6 inline-block">
-                Progetti
-            </span>
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-8 leading-tight tracking-tight text-[#1B1B1B]">
-                I miei progetti
-            </h1>
-            <p class="font-mono text-gray-600 text-lg md:text-xl leading-relaxed border-l-4 border-gray-300 pl-6">
-                Una raccolta dei lavori che ho realizzato, dalle idee iniziali fino al prodotto finale. Codice, creatività e problem solving.
-            </p>
-        </div>
-    </section>
+    <?php echo $info; ?>
 
     <main class="max-w-6xl mx-auto px-6 pb-32 space-y-32">
 
+        <!--Rendering data from JSON file-->
         <?php
             $layout_inv = false;
             foreach($projects['progetti'] as $proj){
@@ -79,6 +68,9 @@
             }
         ?>
     </main>
+    <?php
+        echo $footer;
+    ?>
     <script src="../../component_loader.js"></script>
 </body>
 </html>
