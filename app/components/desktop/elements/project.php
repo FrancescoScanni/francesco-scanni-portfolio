@@ -14,19 +14,15 @@
                         <a href="#"><img src="static/media/images/logo.png" class="pfp w-[24px] h-[24px]" alt="pfp"></a>
                     </div>
                     <div class="relative flex justify-end lg:hidden">
-                        <div id="menuBox" class="menuBox flex flex-col justify-between items-end w-[30px] h-[24px] cursor-pointer z-50">
-                            <div class="bar bar1 w-full h-[3px] bg-white rounded transition-all duration-300"></div>
-                            <div class="bar bar2 w-full h-[3px] bg-white rounded transition-all duration-300"></div>
-                            <div class="bar bar3 w-full h-[3px] bg-white rounded transition-all duration-300"></div>
-                        </div>
+                     
 
                         <nav id="menu" class="gap-[20px] fixed w-full left-0 top-[70px] p-6 hidden flex-col h-[calc(100vh-70px)] bg-gradient-to-b from-[#080808] to-[#111111] z-40 shadow-2xl">
                             <div class="redirItem flex items-center justify-between">
                                 <a href="#features"><p class="text-[#9C9C9C] raleway text-[24px] font-extrabold">Progetti</p></a>
                                 <div class="social flex gap-[15px]">
-                                    <a href="https://github.com/FrancescoScanni"><img src="../../static/media/images/GitHub.png" alt="GitHub"></a>
-                                    <a href="https://instagram.com/francesco.scanni_"><img src="../../static/media/images/Gmail.png" alt="Gmail"></a>
-                                    <a href="https://www.linkedin.com/in/francesco-scanni-441605351/"><img src="../../static/media/images/LinkedIn.png" alt="LinkedIn"></a>
+                                    <a href="https://github.com/FrancescoScanni"><img src="https://ibb.co/dwDnPcjM" alt="GitHub"></a>
+                                    <a href="https://instagram.com/francesco.scanni_"><img src="../elements/banners/header/Gmail.png" alt="Gmail"></a>
+                                    <a href="https://www.linkedin.com/in/francesco-scanni-441605351/"><img src="../elements/banners/header/LinkedIn.png" alt="LinkedIn"></a>
                                 </div>
                             </div>
 
@@ -46,12 +42,11 @@
                         <a href="../../pcto/pcto.html"><p class="text-[#9C9C9C] hover:text-white transition-colors ibm text-[14px] tracking-[0.14px]">Contatti</p></a>
                     </div>
                     <div class="hidden lg:flex lg:gap-[20px] items-center">
-                        <a href="https://github.com/FrancescoScanni" class="hover:scale-110 transition-transform duration-200"><img src="static/media/images/GitHub.png" alt="GitHub"></a>
-                        <a href="https://instagram.com/francesco.scanni_" class="hover:scale-110 transition-transform duration-200"><img src="static/media/images/Gmail.png" alt="Gmail"></a>
-                        <a href="https://www.linkedin.com/in/francesco-scanni-441605351/" class="hover:scale-110 transition-transform duration-200"><img src="static/media/images/LinkedIn.png" alt="LinkedIn"></a>
+                        <a class="text-[#9C9C9C] hover:text-white transition-colors ibm text-[14px] tracking-[0.14px] mr-[60px]" href="../../../index.html">Home</a>
                     </div>
-    </div>';
-    $info='<section class="max-w-6xl mx-auto px-6 pt-18 pb-20 md:pt-24 md:pb-32">
+                </div>';
+
+    $info='<section class="max-w-6xl mx-auto px-6 pt-18 pb-20 md:pt-48 md:pb-32">
                 <div class="max-w-3xl">
                     <span class="text-orange-600 bg-orange-100 font-bold text-xs px-4 py-1.5 rounded-full uppercase tracking-widest mb-6 inline-block">
                         Progetti
@@ -62,6 +57,27 @@
                     <p class="font-mono text-gray-600 text-lg md:text-xl leading-relaxed border-l-4 border-gray-300 pl-6">
                         Una raccolta dei lavori che ho realizzato, dalle idee iniziali fino al prodotto finale. Codice, creatività e problem solving.
                     </p>
+                </div>
+            </section>';
+
+    $prefooter='<section class="flex justify-end max-w-6xl mx-auto px-6 pt-18 pb-20 md:pb-32">
+                <div class="max-w-3xl">
+                    <span class="text-blue-600 bg-blue-100 font-bold text-xs px-4 py-1.5 rounded-full uppercase tracking-widest mb-6 inline-block">
+                        Altro
+                    </span>
+                    <h1 class="text-5xl md:text-7xl font-extrabold mb-8 leading-tight tracking-tight text-[#1B1B1B]">
+                        Discover more
+                    </h1>
+                    <p class="font-mono text-gray-600 text-lg md:text-xl leading-relaxed border-l-4 border-gray-300 pl-6">
+                        Scopri altri progetti e lavori che ho realizzato, clicca sul link di redirect verso il mio profilo GitHub per visualizzare il codice sorgente e le repository dei progetti.
+                    </p>
+
+                    <a href="https://github.com/francescoscanni" class="inline-flex items-center gap-2 text-blue-600 font-bold hover:text-blue-700 hover:gap-3 transition-all duration-300 mt-[30px] ml-[40px]" target="_blank">
+                            Vedi il profilo
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
                 </div>
             </section>';
 
