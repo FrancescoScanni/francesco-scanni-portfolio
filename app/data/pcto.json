@@ -5,29 +5,29 @@
         "type": "img",
         "img": "https://www.scuoleorte.edu.it/wp-content/uploads/2025/11/erasmusa-2.jpg",
         "imgHeight": "h-52",
-        "tag": "Mobilità Internazionale | Creta",
+        "tag": "International Mobility | Crete",
         "tagClass": "text-[#4D9EFF] bg-[#4D9EFF]/10",
-        "title": "Progetto Erasmus+ a Rethymno",
-        "text": "Dal 3 giugno al 2 luglio 2025 ho vissuto un mese sull'isola di Creta. Un'esperienza immersiva mirata allo sviluppo di competenze sistemistiche, linguistiche e relazionali in un contesto multiculturale.",
-        "link": "Esplora",
+        "title": "Erasmus+ Project in Rethymno",
+        "text": "From June 3rd to July 2nd, 2025, I lived for a month on the island of Crete. An immersive experience aimed at developing system, linguistic, and interpersonal skills in a multicultural context.",
+        "link": "Explore",
         "linkClass": "text-[#4D9EFF]",
-        "keywords": ["IMS", "Linux/Container", "Networking", "Inglese", "Teamwork"],
+        "keywords": ["IMS", "Linux/Container", "Networking", "English", "Teamwork"],
         "keywordsColor": "text-[#4D9EFF] border-[#4D9EFF]/30 bg-[#4D9EFF]/10",
         "popupSections": [
             {
                 "img": "https://i.ibb.co/d078QdWv/IMG-1337.jpg",
-                "title": "L'arrivo e l'Immersione Culturale",
-                "text": "Il 3 giugno è iniziata ufficialmente la mia avventura a Rethymno. L'impatto con la città è stato entusiasmante: ho dovuto adattarmi rapidamente a una nuova cultura e a ritmi di vita inediti. Fin dal primo giorno, comunicare esclusivamente in lingua inglese è diventata la norma, trasformando le sfide logistiche iniziali in una straordinaria occasione di indipendenza."
+                "title": "Arrival and Cultural Immersion",
+                "text": "My adventure in Rethymno officially began on June 3rd. The impact of the city was exciting: I had to adapt quickly to a new culture and unprecedented rhythms of life. From the very first day, communicating exclusively in English became the norm, turning initial logistical challenges into an extraordinary opportunity for independence."
             },
             {
                 "img": "https://i.ibb.co/Y74sZVvf/867114-C9-21-FC-44-DB-99-B3-AF1-A7559-A94-D.jpg",
-                "title": "Stage presso Institute of Mediterranean Studies",
-                "text": "Il cuore dell'esperienza è stato il tirocinio operativo presso IMS, un'innovativa azienda informatica locale. Lavorando a stretto contatto con i loro sviluppatori, ho messo le mani su progetti reali: ho configurato ambienti basati su Linux, gestito architetture a container e scritto script per l'automazione dei processi aziendali. È stata la mia vera prova sul campo in un team IT internazionale."
+                "title": "Internship at the Institute of Mediterranean Studies",
+                "text": "The core of the experience was the operational internship at IMS, an innovative local IT company. Working closely with their developers, I got hands-on experience with real projects: I configured Linux-based environments, managed container architectures, and wrote scripts for business process automation. It was my true field test in an international IT team."
             },
             {
                 "img": "https://i.ibb.co/1fNRDq1J/b8834662-ef09-4d8b-89b0-9df0eae33f87.jpg",
-                "title": "Networking, Amicizie e Crescita",
-                "text": "Oltre alle skill tecniche, questo mese in Grecia mi ha lasciato un bagaglio umano inestimabile. Ho stretto forti legami di amicizia con i colleghi e con gli altri studenti internazionali. Esplorare l'isola nel tempo libero, collaborare e superare gli ostacoli insieme ha potenziato la mia empatia e ampliato la mia rete di conoscenze, rendendomi molto più sicuro e proattivo verso il futuro."
+                "title": "Networking, Friendships, and Growth",
+                "text": "Beyond the technical skills, this month in Greece left me with invaluable human experience. I formed strong bonds of friendship with colleagues and other international students. Exploring the island in my free time, collaborating, and overcoming obstacles together boosted my empathy and expanded my network, making me much more confident and proactive toward the future."
             }
         ]
     },
@@ -36,10 +36,10 @@
         "type": "img",
         "img": "https://i0.wp.com/pugliasera.it/wp-content/uploads/2022/10/accenture.jpg?fit=546%2C312&ssl=1",
         "imgHeight": "h-52",
-        "tag": "Formazione IFS",
+        "tag": "IFS Training",
         "tagClass": "text-[#A78BFA] bg-[#A78BFA]/10",
         "title": "Accenture S.p.A.",
-        "text": "Percorso formativo svolto interamente a scuola come Impresa Formativa Simulata. L'attività si è concentrata sullo studio e l'applicazione pratica per lo sviluppo web frontend, approfondendo JavaScript e l'utilizzo di framework come Angular e Bootstrap.",
+        "text": "Training course carried out entirely at school as a Simulated Training Enterprise. The activity focused on the study and practical application of frontend web development, delving into JavaScript and the use of frameworks like Angular and Bootstrap.",
         "keywords": ["Angular", "Bootstrap", "JavaScript"],
         "keywordsColor": "text-[#A78BFA] border-[#A78BFA]/30 bg-[#A78BFA]/10"
     },
@@ -49,24 +49,24 @@
         "tag": "Big Tech",
         "tagClass": "text-[#4D9EFF] bg-[#4D9EFF]/10",
         "title": "IBM Italia Spa",
-        "text": "Attività biennale svolta prevalentemente in aula. Formazione tecnica specialistica in ambito informatico con un leader globale del settore IT.",
-        "keywords": ["Enterprise IT", "Cloud Computing", "Innovazione"],
+        "text": "Two-year activity carried out mainly in the classroom. Specialized technical training in the IT field with a global leader in the sector.",
+        "keywords": ["Enterprise IT", "Cloud Computing", "Innovation"],
         "keywordsColor": "text-[#4D9EFF] border-[#4D9EFF]/30 bg-[#4D9EFF]/10"
     },
     {
         "block": "col-span-4",
         "type": "text",
-        "tag": "Fabbricazione Digitale",
+        "tag": "Digital Fabrication",
         "tagClass": "text-[#FFA217] bg-[#FFA217]/10",
         "title": "Apulia Makers 3D",
-        "text": "Attività pratica in ambiente lavorativo incentrata sulle tecnologie di modellazione e stampa 3D presso una realtà specializzata pugliese.",
-        "keywords": ["Stampa 3D", "Prototipazione", "Slicing"],
+        "text": "Practical work-environment activity focused on 3D modeling and printing technologies at a specialized company in Puglia.",
+        "keywords": ["3D Printing", "Prototyping", "Slicing"],
         "keywordsColor": "text-[#FFA217] border-[#FFA217]/30 bg-[#FFA217]/10"
     },
     {
         "block": "col-span-4",
         "type": "tools",
-        "tag": "Formazione Enterprise",
+        "tag": "Enterprise Training",
         "tagClass": "text-[#62BA1B] bg-[#62BA1B]/10",
         "tools": [
             "Sprint SRL",
@@ -84,8 +84,8 @@
         "imgHeight": "h-44",
         "tag": "Cyber Security",
         "tagClass": "text-muted bg-[#1B1B1B]",
-        "title": "ANFOS - Sicurezza Online",
-        "text": "Modulo formativo erogato online focalizzato sulla sicurezza nei luoghi di lavoro e informatica.",
+        "title": "ANFOS - Online Safety",
+        "text": "Training module delivered online focused on safety in the workplace and IT security.",
         "keywords": ["Cyber Risk", "Compliance", "D.Lgs 81/08"],
         "keywordsColor": "text-gray-400 border-gray-600/50 bg-gray-800/50"
     },
@@ -94,11 +94,11 @@
         "type": "img",
         "img": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80",
         "imgHeight": "h-44",
-        "tag": "Terzo Settore & Media",
+        "tag": "Third Sector & Media",
         "tagClass": "text-[#FFA217] bg-[#FFA217]/10",
-        "title": "Innovazione Sociale e Contenuti",
-        "text": "Attività guidate presso Next Level ETS e Fondazione Megamark Onlus nel settore no-profit e Campus Editori Srl nell'ambito della produzione editoriale.",
-        "keywords": ["No-Profit", "Teamwork", "Editoria"],
+        "title": "Social Innovation and Content",
+        "text": "Guided activities at Next Level ETS and Fondazione Megamark Onlus in the non-profit sector, and Campus Editori Srl in editorial production.",
+        "keywords": ["Non-Profit", "Teamwork", "Publishing"],
         "keywordsColor": "text-[#FFA217] border-[#FFA217]/30 bg-[#FFA217]/10"
     },
     {
@@ -106,11 +106,11 @@
         "type": "img",
         "img": "https://polibachronicle.poliba.it/wp-content/uploads/2024/06/Student-center-del-Politecnico-di-Bari--1170x600.jpg",
         "imgHeight": "h-44",
-        "tag": "Orientamento Universitario",
+        "tag": "University Orientation",
         "tagClass": "text-[#A78BFA] bg-[#A78BFA]/10",
-        "title": "Percorsi di Scelta Futura",
-        "text": "Visite e attività di orientamento con il Politecnico di Bari, SSML Bona Sforza, Orienta Puglia ed eCampus. Giornate di contatto con realtà accademiche, anche distanti, per una scelta consapevole.",
-        "keywords": ["Politecnico", "Orientamento", "Accademia"],
+        "title": "Future Choice Paths",
+        "text": "Visits and orientation activities with Polytechnic of Bari, SSML Bona Sforza, Orienta Puglia, and eCampus. Days of contact with academic institutions, even distant ones, for an informed choice.",
+        "keywords": ["Polytechnic", "Orientation", "Academy"],
         "keywordsColor": "text-[#A78BFA] border-[#A78BFA]/30 bg-[#A78BFA]/10"
     },
     {
@@ -121,8 +121,8 @@
         "tag": "Fintech & Banking",
         "tagClass": "text-muted bg-[#1B1B1B]",
         "title": "Auriga S.P.A.",
-        "text": "Attività in sede presso una realtà tech specializzata in soluzioni software avanzate per il settore bancario e infrastrutture ATM.",
-        "keywords": ["Fintech", "Software Bancario", "ATM"],
+        "text": "On-site activity at a tech company specialized in advanced software solutions for the banking sector and ATM infrastructure.",
+        "keywords": ["Fintech", "Banking Software", "ATM"],
         "keywordsColor": "text-gray-400 border-gray-600/50 bg-gray-800/50"
     },
     {
@@ -130,11 +130,11 @@
         "type": "img",
         "img": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=900&q=80",
         "imgHeight": "h-44",
-        "tag": "Sviluppo Professionale",
+        "tag": "Professional Development",
         "tagClass": "text-[#62BA1B] bg-[#62BA1B]/10",
-        "title": "Orientamento e Reti sul Territorio",
-        "text": "Inclusione di moduli aziendali e d'istituto per consolidare i contatti con l'intero ecosistema dell'innovazione industriale e nazionale.",
-        "keywords": ["Networking", "Soft Skills", "Ecosistema IT"],
+        "title": "Orientation and Local Networks",
+        "text": "Inclusion of corporate and institutional modules to consolidate contacts with the entire industrial and national innovation ecosystem.",
+        "keywords": ["Networking", "Soft Skills", "IT Ecosystem"],
         "keywordsColor": "text-[#62BA1B] border-[#62BA1B]/30 bg-[#62BA1B]/10"
     }
 ]
