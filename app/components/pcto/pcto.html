@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCTO — Francesco Scanni</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Raleway:wght@400;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        ibm: ['IBM Plex Mono', 'monospace'],
+                        raleway: ['Raleway', 'sans-serif'],
+                    },
+                    colors: {
+                        card: '#111111',
+                        border: '#1F1F1F',
+                        muted: '#9C9C9C',
+                        faint: '#555555',
+                        page: '#080808',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-page min-h-screen px-6 py-16 lg:px-16">
+
+    <div class="flex flex-col items-center text-center mb-16 max-w-2xl mx-auto">
+        <p class="font-raleway text-white text-[40px] font-black leading-none">Esperienze PCTO</p>
+        <p class="font-ibm text-muted text-[15px] leading-relaxed mt-5">
+            Tre anni di alternanza scuola-lavoro. Ogni blocco racconta un pezzo del percorso che mi ha portato fin qui. Cliccare su ogni sezione per scoprire di più.
+        </p>
+    </div>
+
+    <div class="grid grid-cols-12 gap-4 max-w-6xl mx-auto" id="pcto-grid">
+        
+    </div>
+
+    <script src="../../static/media/images/"></script>
+
+
+    <div id="modal-backdrop" onclick="closeModal(event)" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4 md:p-6">
+        <div id="modal-content" class="bg-card border border-border rounded-2xl w-full max-w-5xl h-fit max-h-[90vh] flex flex-col overflow-hidden transform scale-95 transition-transform duration-300 relative shadow-2xl">
+            
+            <button onclick="forceCloseModal()" class="absolute top-4 right-4 bg-black/60 hover:bg-black text-white w-8 h-8 flex items-center justify-center rounded-full z-10 transition backdrop-blur-md border border-white/10">
+                ✕
+            </button>
+
+            <div id="modal-body" class="w-full overflow-y-auto flex flex-col h-full"></div>
+
+        </div>
+    </div>
+
+    <script src="pcto.js"></script>
+</body>
+</html>

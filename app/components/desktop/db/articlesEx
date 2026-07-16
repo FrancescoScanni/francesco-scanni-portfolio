@@ -1,0 +1,58 @@
+INSERT INTO `articles` (
+    `title`, 
+    `slug`, 
+    `excerpt`, 
+    `content`, 
+    `featured_image`, 
+    `status`, 
+    `is_featured`, 
+    `published_at`
+) VALUES (
+    'The Artificial Intelligence Approach to Different Types of Prompts',
+    'ai-approach-prompt-types',
+    'An in-depth analysis of how Large Language Models process and tackle user inputs, distinguishing between informational, creative, logical, and programming tasks.',
+    '## The Architecture of Artificial Thought
+
+Every time a user enters an input into a language model\'s chat, a complex neural processing workflow is activated. Artificial Intelligence does not "think" like a human being; instead, it maps probabilistic relationships between words. However, the strategic approach to the response changes radically depending on the nature of the prompt received.
+
+We can divide interactions with AI into three macro-categories, each of which requires a different balance between logical rigor and creative flexibility.
+
+---
+
+### 1. Factual and Informational Requests
+In this scenario, the user is looking for precise data, definitions, historical summaries, or explanations of complex concepts.
+
+* **How the AI behaves:** The model minimizes "creativity" (to avoid data hallucination) and acts as an advanced semantic search engine.
+* **Response structure:** It prefers the use of bullet points, comparative tables, and clear definitions at the top of the text.
+* **Main objective:** Maximum accuracy and text scannability.
+
+> **Golden rule for the user:** To get the most out of these requests, it is essential to specify the context and the desired depth of detail (e.g., "Explain it to me like I\'m a beginner").
+
+---
+
+### 2. Creative Generation and Brainstorming
+When asking the AI to write a story, design a brand payoff, or generate ideas for a blog, the approach changes completely.
+
+* **How the AI behaves:** The model expands probabilistic connections, drawing from seemingly distant contexts to create original analogies. The algorithmic "temperature" parameter is utilized to obtain less predictable outputs.
+* **Response structure:** Fluid text, narrative paragraphs, and lists of highly diversified options.
+* **Main objective:** Variety, stylistic fluidity, and originality.
+
+---
+
+### 3. Logic, Coding, and Problem Solving
+This is the most rigid and deterministic domain, which includes writing software code, debugging, or solving complex mathematical problems.
+
+* **How the AI behaves:** The model applies a sequential and rigorous approach (often guided by *Chain-of-Thought* logic), analyzing syntactic dependencies and the structural constraints of the programming language or logical rules requested.
+* **Response structure:** Isolated code blocks, line-by-line comments, and a final explanation of the logic used.
+* **Main objective:** Functionality, absence of bugs, and performance optimization.
+
+---
+
+## Conclusions: The Importance of Prompt Engineering
+
+Understanding how AI segments and processes tasks allows developers and content creators to design better prompts. Artificial Intelligence adapts to the user\'s style: a vague input will generate a generic response, while a structured, clear, and contextualized input will unlock the model\'s true potential.',
+    'images/blog/ai-approccio-richieste.jpg',
+    'published',
+    1,
+    NOW()
+);

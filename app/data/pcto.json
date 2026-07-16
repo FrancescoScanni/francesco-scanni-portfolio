@@ -1,0 +1,140 @@
+[
+    {
+        "block": "col-span-7",
+        "featured": true,
+        "type": "img",
+        "img": "https://www.scuoleorte.edu.it/wp-content/uploads/2025/11/erasmusa-2.jpg",
+        "imgHeight": "h-52",
+        "tag": "Mobilità Internazionale | Creta",
+        "tagClass": "text-[#4D9EFF] bg-[#4D9EFF]/10",
+        "title": "Progetto Erasmus+ a Rethymno",
+        "text": "Dal 3 giugno al 2 luglio 2025 ho vissuto un mese sull'isola di Creta. Un'esperienza immersiva mirata allo sviluppo di competenze sistemistiche, linguistiche e relazionali in un contesto multiculturale.",
+        "link": "Esplora",
+        "linkClass": "text-[#4D9EFF]",
+        "keywords": ["IMS", "Linux/Container", "Networking", "Inglese", "Teamwork"],
+        "keywordsColor": "text-[#4D9EFF] border-[#4D9EFF]/30 bg-[#4D9EFF]/10",
+        "popupSections": [
+            {
+                "img": "https://i.ibb.co/d078QdWv/IMG-1337.jpg",
+                "title": "L'arrivo e l'Immersione Culturale",
+                "text": "Il 3 giugno è iniziata ufficialmente la mia avventura a Rethymno. L'impatto con la città è stato entusiasmante: ho dovuto adattarmi rapidamente a una nuova cultura e a ritmi di vita inediti. Fin dal primo giorno, comunicare esclusivamente in lingua inglese è diventata la norma, trasformando le sfide logistiche iniziali in una straordinaria occasione di indipendenza."
+            },
+            {
+                "img": "https://i.ibb.co/Y74sZVvf/867114-C9-21-FC-44-DB-99-B3-AF1-A7559-A94-D.jpg",
+                "title": "Stage presso Institute of Mediterranean Studies",
+                "text": "Il cuore dell'esperienza è stato il tirocinio operativo presso IMS, un'innovativa azienda informatica locale. Lavorando a stretto contatto con i loro sviluppatori, ho messo le mani su progetti reali: ho configurato ambienti basati su Linux, gestito architetture a container e scritto script per l'automazione dei processi aziendali. È stata la mia vera prova sul campo in un team IT internazionale."
+            },
+            {
+                "img": "https://i.ibb.co/1fNRDq1J/b8834662-ef09-4d8b-89b0-9df0eae33f87.jpg",
+                "title": "Networking, Amicizie e Crescita",
+                "text": "Oltre alle skill tecniche, questo mese in Grecia mi ha lasciato un bagaglio umano inestimabile. Ho stretto forti legami di amicizia con i colleghi e con gli altri studenti internazionali. Esplorare l'isola nel tempo libero, collaborare e superare gli ostacoli insieme ha potenziato la mia empatia e ampliato la mia rete di conoscenze, rendendomi molto più sicuro e proattivo verso il futuro."
+            }
+        ]
+    },
+    {
+        "block": "col-span-5",
+        "type": "img",
+        "img": "https://i0.wp.com/pugliasera.it/wp-content/uploads/2022/10/accenture.jpg?fit=546%2C312&ssl=1",
+        "imgHeight": "h-52",
+        "tag": "Formazione IFS",
+        "tagClass": "text-[#A78BFA] bg-[#A78BFA]/10",
+        "title": "Accenture S.p.A.",
+        "text": "Percorso formativo svolto interamente a scuola come Impresa Formativa Simulata. L'attività si è concentrata sullo studio e l'applicazione pratica per lo sviluppo web frontend, approfondendo JavaScript e l'utilizzo di framework come Angular e Bootstrap.",
+        "keywords": ["Angular", "Bootstrap", "JavaScript"],
+        "keywordsColor": "text-[#A78BFA] border-[#A78BFA]/30 bg-[#A78BFA]/10"
+    },
+    {
+        "block": "col-span-4",
+        "type": "text",
+        "tag": "Big Tech",
+        "tagClass": "text-[#4D9EFF] bg-[#4D9EFF]/10",
+        "title": "IBM Italia Spa",
+        "text": "Attività biennale svolta prevalentemente in aula. Formazione tecnica specialistica in ambito informatico con un leader globale del settore IT.",
+        "keywords": ["Enterprise IT", "Cloud Computing", "Innovazione"],
+        "keywordsColor": "text-[#4D9EFF] border-[#4D9EFF]/30 bg-[#4D9EFF]/10"
+    },
+    {
+        "block": "col-span-4",
+        "type": "text",
+        "tag": "Fabbricazione Digitale",
+        "tagClass": "text-[#FFA217] bg-[#FFA217]/10",
+        "title": "Apulia Makers 3D",
+        "text": "Attività pratica in ambiente lavorativo incentrata sulle tecnologie di modellazione e stampa 3D presso una realtà specializzata pugliese.",
+        "keywords": ["Stampa 3D", "Prototipazione", "Slicing"],
+        "keywordsColor": "text-[#FFA217] border-[#FFA217]/30 bg-[#FFA217]/10"
+    },
+    {
+        "block": "col-span-4",
+        "type": "tools",
+        "tag": "Formazione Enterprise",
+        "tagClass": "text-[#62BA1B] bg-[#62BA1B]/10",
+        "tools": [
+            "Sprint SRL",
+            "CivicaMente IFS",
+            "TIM SPA",
+            "Angelstar SRL",
+            "Fidelis SRLS",
+            "Centro ELIS"
+        ]
+    },
+    {
+        "block": "col-span-3",
+        "type": "img",
+        "img": "https://www.soardistudiolegale.it/wp-content/uploads/2025/10/Un-elmetto-Giallo-da-cantiere-simbolo-dei-reati-in-materia-di-sicurezza-sul-lavoro-1024x576.webp",
+        "imgHeight": "h-44",
+        "tag": "Cyber Security",
+        "tagClass": "text-muted bg-[#1B1B1B]",
+        "title": "ANFOS - Sicurezza Online",
+        "text": "Modulo formativo erogato online focalizzato sulla sicurezza nei luoghi di lavoro e informatica.",
+        "keywords": ["Cyber Risk", "Compliance", "D.Lgs 81/08"],
+        "keywordsColor": "text-gray-400 border-gray-600/50 bg-gray-800/50"
+    },
+    {
+        "block": "col-span-5",
+        "type": "img",
+        "img": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80",
+        "imgHeight": "h-44",
+        "tag": "Terzo Settore & Media",
+        "tagClass": "text-[#FFA217] bg-[#FFA217]/10",
+        "title": "Innovazione Sociale e Contenuti",
+        "text": "Attività guidate presso Next Level ETS e Fondazione Megamark Onlus nel settore no-profit e Campus Editori Srl nell'ambito della produzione editoriale.",
+        "keywords": ["No-Profit", "Teamwork", "Editoria"],
+        "keywordsColor": "text-[#FFA217] border-[#FFA217]/30 bg-[#FFA217]/10"
+    },
+    {
+        "block": "col-span-4",
+        "type": "img",
+        "img": "https://polibachronicle.poliba.it/wp-content/uploads/2024/06/Student-center-del-Politecnico-di-Bari--1170x600.jpg",
+        "imgHeight": "h-44",
+        "tag": "Orientamento Universitario",
+        "tagClass": "text-[#A78BFA] bg-[#A78BFA]/10",
+        "title": "Percorsi di Scelta Futura",
+        "text": "Visite e attività di orientamento con il Politecnico di Bari, SSML Bona Sforza, Orienta Puglia ed eCampus. Giornate di contatto con realtà accademiche, anche distanti, per una scelta consapevole.",
+        "keywords": ["Politecnico", "Orientamento", "Accademia"],
+        "keywordsColor": "text-[#A78BFA] border-[#A78BFA]/30 bg-[#A78BFA]/10"
+    },
+    {
+        "block": "col-span-5",
+        "type": "img",
+        "img": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&q=80",
+        "imgHeight": "h-44",
+        "tag": "Fintech & Banking",
+        "tagClass": "text-muted bg-[#1B1B1B]",
+        "title": "Auriga S.P.A.",
+        "text": "Attività in sede presso una realtà tech specializzata in soluzioni software avanzate per il settore bancario e infrastrutture ATM.",
+        "keywords": ["Fintech", "Software Bancario", "ATM"],
+        "keywordsColor": "text-gray-400 border-gray-600/50 bg-gray-800/50"
+    },
+    {
+        "block": "col-span-7",
+        "type": "img",
+        "img": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=900&q=80",
+        "imgHeight": "h-44",
+        "tag": "Sviluppo Professionale",
+        "tagClass": "text-[#62BA1B] bg-[#62BA1B]/10",
+        "title": "Orientamento e Reti sul Territorio",
+        "text": "Inclusione di moduli aziendali e d'istituto per consolidare i contatti con l'intero ecosistema dell'innovazione industriale e nazionale.",
+        "keywords": ["Networking", "Soft Skills", "Ecosistema IT"],
+        "keywordsColor": "text-[#62BA1B] border-[#62BA1B]/30 bg-[#62BA1B]/10"
+    }
+]

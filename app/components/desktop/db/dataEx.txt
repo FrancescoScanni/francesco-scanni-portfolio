@@ -1,0 +1,43 @@
+INSERT INTO `timeline_events` 
+(`event_date`, `title`, `description`, `image_path`, `caption`, `shape_type`, `quadrant`, `order_date`) 
+VALUES
+(
+  '2021-2026', 
+  'ITT Panetti Pitagora - High School Education', 
+  'I studied for 5 years at a technical high school, earning a diploma in Computer Science and Telecommunications with the maximum score of 100/100 cum laude.', 
+  'https://www.panettipitagora.edu.it/wp/wp-content/uploads/2023/07/cropped-panetti-pitagora-squared.png', 
+  'Secondary education and academics', 
+  'fumetto', 
+  'above', 
+  '2025-07-01'
+),
+(
+  '06/2025', 
+  'Erasmus+ International Mobility - Crete', 
+  'I spent a month in Greece (Rethymno) thanks to the Erasmus+ project, working at local IT companies and refining both my technical and language skills.', 
+  'https://images.seeklogo.com/logo-png/32/1/erasmus-logo-png_seeklogo-321107.png', 
+  'Professional and multicultural learning', 
+  'nastro', 
+  'below', 
+  '2026-03-01'
+),
+(
+  '07/2025', 
+  'CAE English Preparation & Certification – Birmingham', 
+  'Completed an intensive one-month language program at Bournville College in Birmingham, England, successfully earning the Cambridge certificate.', 
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY6H2MuL0GEoQCKtjyVC8jvU0O0wF4HoTD-ft51rw1v3-1Mm_k9Aa8mm_S&s=10', 
+  'Cambridge CAE Achieved!', 
+  'nastro', 
+  'above', 
+  '2026-03-01'
+),
+(
+  '2026', 
+  'Politecnico di Milano - Computer Engineering', 
+  'I began my Bachelor\'s degree in Computer Engineering at PoliMi, aiming to build upon the foundations laid during my 5 years of high school.', 
+  'https://cities.confcommercio.it/wp-content/uploads/2025/09/Politecnico.jpg', 
+  'Academic and professional learning', 
+  'pillola', 
+  'below', 
+  '2026-07-01'
+);
