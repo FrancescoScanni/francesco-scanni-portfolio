@@ -1,8 +1,9 @@
 <?php
-    $host = "mysql_db";
-    $username = "root";
-    $password = "rootpassword";
-    $db="portfolio";
+    //env vars
+    $host = getenv('MYSQL_HOST') ?: "mysql_db";
+    $username = getenv('MYSQL_USER') ?: "root";
+    $password = getenv('MYSQL_PASSWORD') ?: "rootpassword";
+    $db = getenv('MYSQL_DB') ?: "portfolio";
 
     $conn = new mysqli($host, $username, $password, $db);
     if ($conn->connect_error) {
