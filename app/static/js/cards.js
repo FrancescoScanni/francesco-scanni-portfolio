@@ -5,7 +5,7 @@ document.addEventListener("HTMLComponentsLoaded", () => {
     const terminalCardId = "card-fls";
     const terminalFile = "components/overlayers/terminal.html";
 
-    // Crea l'overlay container una volta sola nel DOM
+    // Create the overlay container only once in the DOM
     const overlay = document.createElement("div");
     overlay.id = "overlay";
     overlay.className = "fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300";
@@ -25,9 +25,9 @@ document.addEventListener("HTMLComponentsLoaded", () => {
     const overlayContent = document.getElementById("overlay-content");
     const overlayClose = document.getElementById("overlay-close");
 
-    // Apri overlay (ora specifico per il terminale)
+    // Open overlay (specific to the terminal)
     function openOverlay() {
-        overlayContent.innerHTML = `<p class="text-[#484848] ibm text-[15px]">Caricamento...</p>`;
+        overlayContent.innerHTML = `<p class="text-[#484848] ibm text-[15px]">Loading...</p>`;
         
         overlay.classList.remove("opacity-0", "pointer-events-none");
         overlayBox.classList.remove("scale-95");
@@ -39,31 +39,31 @@ document.addEventListener("HTMLComponentsLoaded", () => {
                 return res.text();
             })
             .then(html => { overlayContent.innerHTML = html; })
-            .catch(() => { overlayContent.innerHTML = `<p class="text-red-500 ibm text-[15px]">Errore nel caricamento del contenuto.</p>`; });
+            .catch(() => { overlayContent.innerHTML = `<p class="text-red-500 ibm text-[15px]">Error loading content.</p>`; });
     }
 
-    // Chiudi overlay
+    // Close overlay
     function closeOverlay() {
         overlay.classList.add("opacity-0", "pointer-events-none");
         overlayBox.classList.add("scale-95");
         document.body.style.overflow = "";
     }
 
-    // Click sulla card specifica del terminale
+    // Click event for the terminal card
     const terminalCard = document.getElementById(terminalCardId);
     if (terminalCard) {
         terminalCard.addEventListener("click", openOverlay);
     }
 
-    // Chiudi con pulsante X
+    // Close with "X" button
     overlayClose.addEventListener("click", closeOverlay);
 
-    // Chiudi cliccando fuori dal box
+    // Close by clicking outside the box
     overlay.addEventListener("click", (e) => {
         if (e.target === overlay) closeOverlay();
     });
 
-    // Chiudi con ESC
+    // Close with ESC key
     document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") closeOverlay();
     });

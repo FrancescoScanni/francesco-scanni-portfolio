@@ -14,7 +14,7 @@ fetch('../../data/pcto.json').then(r => r.json()).then(data => {
             : `${tag(e)}<p class="font-raleway text-white text-[18px] font-black leading-snug">${e.title}</p><p class="font-ibm text-muted text-[13px] leading-relaxed">${e.text}</p>${e.keywords?.length ? `<div class="flex flex-wrap gap-2 mt-auto pt-2">${kws(e)}</div>` : ''}${e.link ? `<button onclick="openModal(${i})" class="font-ibm text-[13px] font-bold mt-auto pt-2 text-left w-fit hover:opacity-70 transition-opacity ${e.linkClass}">${e.link} →</button>` : ''}`;
         return `<div class="${e.block} bg-card border border-border rounded-2xl overflow-hidden flex flex-col">${img}<div class="flex flex-col gap-3 p-6 flex-1">${body}</div></div>`;
     }).join('');
-}).catch(err => console.error("Errore caricamento pcto.json:", err));
+}).catch(err => console.error("Error loading pcto.json:", err));
 
 function openModal(i) {
     const e = exps[i];
@@ -28,7 +28,7 @@ function openModal(i) {
                 ${i2 === 0 ? tag(e) : ''}
                 <h2 class="font-raleway text-white ${single ? 'text-[32px] md:text-[40px]' : 'text-[28px] md:text-[36px]'} font-black leading-tight">${s.title}</h2>
                 <p class="font-ibm text-muted text-[15px] leading-relaxed">${s.text}</p>
-                ${i2 === secs.length - 1 && e.keywords?.length ? `<div class="mt-4 border-t border-border pt-6"><p class="font-ibm text-faint text-[12px] uppercase tracking-widest mb-4">Competenze chiave</p><div class="flex flex-wrap gap-2">${kws(e, true)}</div></div>` : ''}
+                ${i2 === secs.length - 1 && e.keywords?.length ? `<div class="mt-4 border-t border-border pt-6"><p class="font-ibm text-faint text-[12px] uppercase tracking-widest mb-4">Key skills</p><div class="flex flex-wrap gap-2">${kws(e, true)}</div></div>` : ''}
             </div>
         </div>`).join('')}</div>`;
 
