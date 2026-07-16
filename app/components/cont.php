@@ -1,21 +1,21 @@
 <?php
+    session_start();
     require "desktop/db/confDB.php";
 
     if($_SERVER['REQUEST_METHOD'] === 'POST') {
-        if(isset($_POST['mail']) && isset($_POST['message'])) {
+        if(!empty($_POST['mail']) && !empty($_POST['message'])) {
             $email = $_POST['mail'];
             $cellulare = $_POST['tel'] ?? '';
             $messaggio = $_POST['message'];
-        }
-        echo "Email: " . $email . "<br>";
-        echo "Cellulare: " . $cellulare . "<br>";
-        echo "Messaggio: " . $messaggio . "<br>";
-        
+            $_SESSION['success'] = true;
+            
+            //uploading data inside DB
+            $stmt = $conn->prepare("INSERT INTO contacts (email, cellulare, messaggio) VALUES (?, ?, ?)");
+            $stmt->execute([$email, $cellulare, $messaggio]);
+        }else{
+            $_SESSION['success'] = false;
+        } 
     }
-
-    $stmt = $conn->prepare("INSERT INTO contacts (email, cellulare, messaggio) VALUES (?, ?, ?)");
-    $stmt->execute([$email, $cellulare, $messaggio]);
-
-    header("Location: /?success=true");
-
+    //redirect to the index page with the success or error message
+    header("Location: ../index.php");
 ?>
