@@ -4,7 +4,7 @@ const commands = {
         <p><span class="text-[#FFA217]">help</span>       — show this menu</p>
         <p><span class="text-[#FFA217]">about</span>      — who I am</p>
         <p><span class="text-[#FFA217]">github</span>     — my skills/projects</p>
-        <p><span class="text-[#FFA217]">pcto</span>       — view my professional experiences</p>
+        <p><span class="text-[#FFA217]">exp</span>       — view my professional experiences</p>
         <p><span class="text-[#FFA217]">clear</span>      — clear the terminal</p>
     `,
     about: () => `
