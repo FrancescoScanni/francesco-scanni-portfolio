@@ -37,12 +37,12 @@
                     </div>
 
                     <div class="hidden lg:flex lg:gap-[50px] xl:gap-[70px] items-center">
-                        <a href="../../../index.html" onclick="scrollWithOffset(event, \'mySection\')"><p class="text-[#9C9C9C] hover:text-white transition-colors ibm text-[14px] tracking-[0.14px]">Chi sono</p></a>
+                        <a href="../../../index.php" onclick="scrollWithOffset(event, \'mySection\')"><p class="text-[#9C9C9C] hover:text-white transition-colors ibm text-[14px] tracking-[0.14px]">Chi sono</p></a>
                         <a href="../pcto/pcto.html"><p class="text-[#9C9C9C] hover:text-white transition-colors ibm text-[14px] tracking-[0.14px]">Esperienze</p></a>
-                        <a href="../../pcto/pcto.html"><p class="text-[#9C9C9C] hover:text-white transition-colors ibm text-[14px] tracking-[0.14px]">Contatti</p></a>
+                        <a href="../../../index.php#contacts"><p class="text-[#9C9C9C] hover:text-white transition-colors ibm text-[14px] tracking-[0.14px]">Contatti</p></a>
                     </div>
                     <div class="hidden lg:flex lg:gap-[20px] items-center">
-                        <a class="text-[#9C9C9C] hover:text-white transition-colors ibm text-[14px] tracking-[0.14px] mr-[60px]" href="../../../index.html">Home</a>
+                        <a class="text-[#9C9C9C] hover:text-white transition-colors ibm text-[14px] tracking-[0.14px] mr-[60px]" href="../../../index.php">Home</a>
                     </div>
                 </div>';
 
