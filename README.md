@@ -1,28 +1,38 @@
-<h1 align="center" id="title">Personal Portfolio - Francesco Scanni</h1>
+# Francesco Scanni's Personal Portfolio
 
-<p id="description">It has been a while since I decided to challenge myself by building my personal portfolio website to showcase my skills projects and articles as a beginner in this specific environment. My goal is to create a clean and responsive design that works well on both mobile and desktop. This project is a way for me to improve my front-end development skills while also experimenting with something new like the Tailwind and Bootstrap frameworks.</p>
+Mi presento, sono Fracesco Scanni, 18 anni. Ecco presentato il mio portfolio personale, un progetto di sviluppo web dinamico che integra tecnologie di FE e BE come display per le mie esperienze, i miei articoli autopubblicati e le mie personali qualifiche/titoli. Lo scopo del portfolio è evidenziare le pietre miliari del mio percorso professionale ed umano, il tutto condito dalla mia passione per l'informatica e per i digitale.
 
-<h2>🚀 Demo</h2>
+-> [Portfolio](https://personal-portfolio-francesco-scanni.onrender.com/)
 
-[https://francescoscanni.github.io/francesco-scanni-portfolio/](https://francescoscanni.github.io/francesco-scanni-portfolio/)
-  
-<h2>🧐 Features</h2>
 
-Here're some of the project's best features:
+# What you can do...
+   -  Browse through my experiences
+   -  Contact me in private
+   - Explore my qualifications
+   - Interact with the whole website
 
-*   responsiveness
-*   dynamism
-*   user friendly interface
-*   framework features
-*   clean graphics
 
-  
-  
-<h2>💻 Built with</h2>
 
-Technologies used in the project:
+# It is built with...
 
-*   HTML
-*   CSS
-*   JS
-*   Tailwind CSS
+  ### UI and Logic
+   - PHP --> BE
+   - HTML, CSS --> FE
+
+  ### Data managment
+   - JSON
+   - MySQL (DBMS) -> CleverCloud
+   - PHPMyAdmin (web manager)
+
+  ### Frameworks
+   - Tailwind CSS
+
+  ### AI Credits (NO README)
+   - Google Gemini: system architecture research (especially hosting alternatives such as Render), seeking for ideas
+   - Claude: debugging and colors
+
+
+
+# Hosting and Privacy
+   - Render (web Hosting)
+   - Iubenda (cookies and privacy policies)
