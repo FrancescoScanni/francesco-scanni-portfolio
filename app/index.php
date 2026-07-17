@@ -75,7 +75,7 @@
     </div>
 
     <div data-include="components/intro.html" class="min-h-screen bg-[#080808] flex flex-col justify-center py-20 lg:py-0 lg:pt-[10vh]">
-        <!--PRESENTAZONE-->
+        <!--INFO-->
     </div>
     <!------------------------------------------->
     <!--Mobile-->
@@ -84,11 +84,15 @@
     <!--Desktop-->
     <div class="w-full bg-white hidden lg:block">
         <div data-include="/components/content.html" id="content" class="w-full flex flex-col items-center py-20 px-6">
-            <!--CONTENUTO-->
+            <!--CONTENT-->
         </div>
         
         <div data-include="/components/contacts.php" id="contacts" class="w-full flex flex-col  items-center py-20 px-6 bg-[#080808]">
-            <!--CONTATTI-->
+            <!--CONTACTS-->
+        </div>
+
+        <div data-include="/components/gitProfile.php" id="contacts" class="w-full flex flex-col  items-center py-20 px-6">
+            <!--GITHUB-->
         </div>
 
         <!--FOOTER-->
@@ -136,5 +140,6 @@
             }
         });
     </script>
+    
 </body>
 </html>
