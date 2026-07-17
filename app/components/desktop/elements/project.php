@@ -4,8 +4,14 @@
                     © Francesco Scanni
                 </p>
                 <p class="text-[#666666] text-center text-[10px] lg:text-[12px] font-normal tracking-wider ibm">
-                    Last update 08/2025
+                    Last update 07/2026
                 </p>
+                <div class="flex justify-between gap-7">
+                    <b><a href="https://www.iubenda.com/privacy-policy/77761778" class="iubenda-white iubenda-noiframe iubenda-embed text-[#9C9C9C]" title="Privacy Policy ">Privacy Policy</a>  
+                    </p></a></b>
+                    <b><a href="https://www.iubenda.com/privacy-policy/77761778/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed text-[#9C9C9C]" title="Cookies" >Cookies</a><p class="text-[#666666] text-center text-[10px] lg:text-[12px] font-normal tracking-wider ibm">
+                    </p></a></b>
+                </div>
             </footer>';
 
     $header = '<div class="header w-full h-[70px] bg-[#1B1B1B] flex justify-between items-center px-6 z-40 lg:fixed lg:top-0 lg:left-1/2 lg:-translate-x-1/2 lg:w-[86%] lg:max-w-7xl lg:rounded-b-[8px] lg:px-12">

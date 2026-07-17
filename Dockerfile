@@ -5,7 +5,7 @@ RUN a2enmod rewrite
 
 COPY . /var/www/html/
 
-# se l'entry point è app/index.php, sposta la document root lì
+# dragging document route to the "app" folder, where index is located, so that the app can be accessed via the root URL
 RUN sed -i 's|/var/www/html|/var/www/html/app|g' /etc/apache2/sites-available/000-default.conf
 
 WORKDIR /var/www/html

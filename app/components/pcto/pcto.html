@@ -26,20 +26,58 @@
         }
     </script>
 </head>
-<body class="bg-page min-h-screen px-6 py-16 lg:px-16">
+<body class="bg-page min-h-screen px-0 py-16 pb-0 ">
 
-    <div class="flex flex-col items-center text-center mb-16 max-w-2xl mx-auto">
+    <!--HEADER-->
+    <div class="header  w-full h-[70px] bg-[#1B1B1B] flex justify-between items-center px-6 z-40 lg:fixed lg:top-0 lg:left-1/2 lg:-translate-x-1/2 lg:w-[86%] lg:max-w-7xl lg:rounded-b-[8px] lg:px-12">
+        <div class="pfpCircle bg-[#080808] w-[45px] h-[45px] flex justify-center items-center rounded-full active:scale-[1.1] transition-transform duration-300 lg:hidden">
+            <a href="#"><img src="static/media/images/logo.png" class="pfp w-[24px] h-[24px]" alt="pfp"></a>
+        </div>
+        
+        <div class="relative flex justify-end lg:hidden">
+            <nav id="menu" class="gap-[20px] fixed w-full left-0 top-[70px] p-6 hidden flex-col h-[calc(100vh-70px)] bg-gradient-to-b from-[#080808] to-[#111111] z-40 shadow-2xl">
+                <div class="redirItem flex items-center justify-between">
+                    <a href="#features"><p class="text-[#9C9C9C] raleway text-[24px] font-extrabold">Projects</p></a>
+                    <div class="social flex gap-[15px]">
+                        <a href="https://github.com/FrancescoScanni"><img src="https://ibb.co/dwDnPcjM" alt="GitHub"></a>
+                        <a href="https://instagram.com/francesco.scanni_"><img src="../elements/banners/header/Gmail.png" alt="Gmail"></a>
+                        <a href="https://www.linkedin.com/in/francesco-scanni-441605351/"><img src="../elements/banners/header/LinkedIn.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+                <div class="redirItem flex items-center mt-2">
+                    <a href="#features"><p class="text-[#9C9C9C] raleway text-[24px] font-extrabold">Articles</p></a>
+                </div>
+                <div class="redirItem flex items-center mt-2">
+                    <a href="#features"><p class="text-[#9C9C9C] raleway text-[24px] font-extrabold">Feedback</p></a>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="hidden lg:flex lg:gap-[50px] xl:gap-[70px] items-center">
+            <a href="../../../index.php" onclick="scrollWithOffset(event, 'hero')"><p class="text-[#9C9C9C] hover:text-white transition-colors ibm text-[14px] tracking-[0.14px]">About me</p></a>
+            <a href="../../../index.php#content" onclick="scrollWithOffset(event, 'content')"><p class="text-[#9C9C9C] hover:text-white transition-colors ibm text-[14px] tracking-[0.14px]">Features</p></a>
+            <a href="../../../index.php#contacts" onclick="scrollWithOffset(event, 'contTitle')"><p class="text-[#9C9C9C] hover:text-white transition-colors ibm text-[14px] tracking-[0.14px]">Contacts</p></a>
+        </div>
+        
+        <div class="hidden lg:flex lg:gap-[20px] items-center">
+            <a class="text-[#9C9C9C] hover:text-white transition-colors ibm text-[14px] tracking-[0.14px] mr-[60px]" href="../../../index.php">Home</a>
+        </div>
+    </div>    
+
+
+    <!--SUBHEADING and TITLE-->
+    <div class="flex flex-col items-center text-center mb-16 max-w-2xl mx-auto mt-[5vh] lg:mt-[10vh] lg:px-16">
         <p class="font-raleway text-white text-[40px] font-black leading-none">Professional and Educational Experiences</p>
         <p class="font-ibm text-muted text-[15px] leading-relaxed mt-5">
             Three years of school-work alternation. Each block tells a part of the path that brought me here. Click on each section to discover more.
         </p>
     </div>
 
-    <div class="grid grid-cols-12 gap-4 max-w-6xl mx-auto" id="pcto-grid">
+    <div class="grid grid-cols-12 gap-4 max-w-6xl mx-auto lg:px-16" id="pcto-grid">
         
     </div>
 
-    <div id="modal-backdrop" onclick="closeModal(event)" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4 md:p-6">
+    <div id="modal-backdrop" onclick="closeModal(event)" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4 md:p-6 lg:px-16">
         <div id="modal-content" class="bg-card border border-border rounded-2xl w-full max-w-5xl h-fit max-h-[90vh] flex flex-col overflow-hidden transform scale-95 transition-transform duration-300 relative shadow-2xl">
             
             <button onclick="forceCloseModal()" class="absolute top-4 right-4 bg-black/60 hover:bg-black text-white w-8 h-8 flex items-center justify-center rounded-full z-10 transition backdrop-blur-md border border-white/10">
@@ -51,6 +89,22 @@
         </div>
     </div>
 
+    <footer class="w-full bg-[#1B1B1B] border-t border-[#222222] py-6 lg:py-8 flex flex-col justify-center items-center gap-1 z-10 mt-[10vh]">
+        <p class="text-[#9C9C9C] text-center text-[13px] lg:text-[14px] font-normal tracking-wider ibm transition-colors duration-300 hover:text-white cursor-default">
+            © Francesco Scanni
+        </p>
+        <p class="text-[#666666] text-center text-[10px] lg:text-[12px] font-normal tracking-wider ibm">
+            Last update 07/2026
+        </p>
+        <div class="flex justify-between gap-7">
+            <b><a href="https://www.iubenda.com/privacy-policy/77761778" class="iubenda-white iubenda-noiframe iubenda-embed text-[#9C9C9C]" title="Privacy Policy ">Privacy Policy</a>  
+            </p></a></b>
+            <b><a href="https://www.iubenda.com/privacy-policy/77761778/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed text-[#9C9C9C]" title="Cookies" >Cookies</a><p class="text-[#666666] text-center text-[10px] lg:text-[12px] font-normal tracking-wider ibm">
+            </p></a></b>
+        </div>
+    </footer>
+
     <script src="pcto.js"></script>
+    
 </body>
 </html>

@@ -91,14 +91,20 @@
             <!--CONTATTI-->
         </div>
 
+        <!--FOOTER-->
         <footer class="w-full bg-[#1B1B1B] border-t border-[#222222] py-6 lg:py-8 flex flex-col justify-center items-center gap-1 z-10">
-            <!--FOOTER-->
             <p class="text-[#9C9C9C] text-center text-[13px] lg:text-[14px] font-normal tracking-wider ibm transition-colors duration-300 hover:text-white cursor-default">
                 © Francesco Scanni
             </p>
             <p class="text-[#666666] text-center text-[10px] lg:text-[12px] font-normal tracking-wider ibm">
-                Last update 08/2025
+                Last update 07/2026
             </p>
+            <div class="flex justify-between gap-7">
+                <b><a href="https://www.iubenda.com/privacy-policy/77761778" class="iubenda-white iubenda-noiframe iubenda-embed text-[#9C9C9C]" title="Privacy Policy ">Privacy Policy</a>  
+                </p></a></b>
+                <b><a href="https://www.iubenda.com/privacy-policy/77761778/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed text-[#9C9C9C]" title="Cookies" >Cookies</a><p class="text-[#666666] text-center text-[10px] lg:text-[12px] font-normal tracking-wider ibm">
+                </p></a></b>
+            </div>
         </footer>
     </div>
     <!------------------------------------------->
@@ -108,5 +114,27 @@
     <script src="component_loader.js"></script>
     <script src="static/js/cards.js" defer></script>
     <script src="static/js/terminal.js" defer></script>
+    <script>
+        //generates DOM elements before any other script runs, so that they can be used by other scripts
+        window.addEventListener('DOMContentLoaded', () => {
+            if (window.location.hash) {
+                const targetId = window.location.hash.substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    setTimeout(() => {
+                        const headerOffset = 70;
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                        
+                        window.scrollTo({ 
+                            top: offsetPosition, 
+                            behavior: "smooth" 
+                        });
+                    }, 200);
+                }
+            }
+        });
+    </script>
 </body>
 </html>

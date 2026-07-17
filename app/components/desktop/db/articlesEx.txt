@@ -56,3 +56,11 @@ Understanding how AI segments and processes tasks allows developers and content 
     1,
     NOW()
 );
+
+
+
+I know Render stops after a while. I implemented a bot sending HTTP requests every 10 minutes to keep my website alive. Now enjoy ;)
+
+
+
+I used AI for debugging, fetching ideas and choosing the best color palette for the style. I also used AI to translate common CSS code into Tailwind CSS. The idea of the simulated terminal, for example, was partially given by AI.
