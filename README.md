@@ -1,7 +1,10 @@
 # Francesco Scanni's Personal Portfolio
 
-Mi presento, sono Fracesco Scanni, 18 anni. Ecco presentato il mio portfolio personale, un progetto di sviluppo web dinamico che integra tecnologie di FE e BE come display per le mie esperienze, i miei articoli autopubblicati e le mie personali qualifiche/titoli. Lo scopo del portfolio è evidenziare le pietre miliari del mio percorso professionale ed umano, il tutto condito dalla mia passione per l'informatica e per i digitale.
+Let me introduce myself: I am Francesco Scanni, 18 years old. Here is my personal portfolio, a dynamic web development project that integrates FE and BE technologies to showcase my experiences, self-published articles, and personal qualifications/titles. The purpose of this portfolio is to highlight the milestones of my professional and personal journey, all enriched by my passion for computer science and the digital world.
 
+
+# Setup
+You simply need to click the following link, everything is online!!!
 -> [Portfolio](https://personal-portfolio-francesco-scanni.onrender.com/)
 
 
