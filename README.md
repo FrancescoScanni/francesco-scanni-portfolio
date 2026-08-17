@@ -5,7 +5,8 @@ Let me introduce myself: I am Francesco Scanni, 18 years old. Here is my persona
 
 # Setup
 You simply need to click the following link, everything is online!!!
--> [Portfolio]([https://personal-portfolio-francesco-scanni.onrender.com/](https://francescoscanni.unaux.com/?i=1))
+
+-> [Portfolio](https://francescoscanni.unaux.com/?i=1)
 
 <img width="1897" height="903" alt="image" src="https://github.com/user-attachments/assets/d7d85df9-df00-4079-8202-f6517c89a7b1" />
 
